@@ -99,14 +99,34 @@ def article_data(url,paper,category,listing_title=''):
     return item
 
 def classify_yahoo(title):
-    # Conservative topical routing: ambiguous stories are skipped, not miscategorized.
-    rules={
-      '政治': r'首相|内閣|国会|衆院|参院|選挙|政党|自民|立憲|議員|閣僚|官房長官|与党|野党|総裁|政治資金|政策|外交|防衛相',
-      '経済': r'日銀|円相場|為替|株価|東証|企業|決算|景気|物価|賃金|金利|銀行|市場|経済|貿易|関税|半導体|GDP|投資|消費税|雇用',
-      '国際': r'米国|アメリカ|中国|台湾|韓国|北朝鮮|ロシア|ウクライナ|イスラエル|ガザ|イラン|欧州|国連|トランプ|海外|国際|NATO|インド|中東|フランス|ドイツ'
+    """Classify a Yahoo Yomiuri listing headline conservatively.
+
+    Specific economic vocabulary is more reliable than generic country names,
+    or the substring 政策 (which occurs in 政策金利). Ties remain unclassified.
+    """
+    title = clean(title)
+    features = {
+      '政治': (
+        (5, r'首相|内閣|国会|衆院|参院|議員|閣僚|官房長官|知事|県議|市議|自民党|立憲民主党|公明党|国民民主党|与党|野党|政治資金|政権|議会|選挙|法案'),
+        (2, r'外交|防衛相|厚労相|文科相|農相|閣議|総裁選'),
+      ),
+      '経済': (
+        (6, r'日銀|政策金利|為替|円安|円高|株価|株式市場|日経平均|決算|売上高|営業利益|純利益|最終赤字|最終黒字|半導体|GDP|消費者物価|景気|賃上げ|雇用統計|物価高|企業業績|損害賠償|不正会計|経済成長'),
+        (4, r'輸出|輸入|関税|貿易|生産|設備投資|投資|値上げ|値下げ|金融|倒産|企業買収|株主|市場|金利|給与|失業率|賃金'),
+        (3, r'トヨタ|日産|ホンダ|ニデック|三菱自|三菱商事|ソニー|パナソニック|ボーイング|銀行|企業|メーカー|新型車|百貨店|小売り'),
+      ),
+      '国際': (
+        (6, r'国連|NATO|米大統領|トランプ|プーチン|ゼレンスキー|ロシア軍|ウクライナ軍|米軍|イスラエル軍|北朝鮮軍|中国軍|ガザ|イラン|国際刑事裁判所|停戦|空爆|ミサイル攻撃'),
+        (4, r'ロシア|ウクライナ|イスラエル|北朝鮮|欧州連合|EU|外国政府|中国政府|米政府|外交問題'),
+        (1, r'中国|米国|アメリカ|韓国|台湾|海外|フランス|ドイツ|インド|フィリピン|国際'),
+      )
     }
-    matches=[k for k,p in rules.items() if re.search(p,title,re.I)]
-    return matches[0] if len(matches)==1 else None
+    scores = {key: sum(weight for weight,pattern in tests if re.search(pattern,title,re.I)) for key,tests in features.items()}
+    ordered = sorted(scores, key=lambda key:scores[key], reverse=True)
+    best, second = ordered[:2]
+    if scores[best] < 3 or scores[best] - scores[second] < 2:
+        return None
+    return best
 
 def candidates(s,url,paper):
     seen=set()
@@ -124,47 +144,82 @@ def candidates(s,url,paper):
         seen.add(href)
         yield href,title
 
+def yomiuri_next_page(s, base, visited):
+    """Follow only a real, visible Yahoo listing next-page link."""
+    for a in s.select('a[href]'):
+        label=clean(a.get_text(' ',strip=True))
+        if label not in ('次へ','次のページ','次の25件'):
+            continue
+        url=urllib.parse.urljoin(base,a['href'])
+        u=urllib.parse.urlsplit(url)
+        if u.scheme=='https' and u.netloc=='news.yahoo.co.jp' and url not in visited:
+            return url
+    return None
+
 def fetch():
     groups={f'{p}|{c}':[] for p in ('朝日','毎日','読売') for c in ('政治','経済','国際')}
     errors=[]
-    for paper,urls in SOURCES.items():
-        for category,listing in urls.items():
+    for paper in ('朝日','毎日'):
+        for category,listing in SOURCES[paper].items():
             try:
                 s=soup_of(listing)
                 links=list(candidates(s,listing,paper))
                 if not links: raise ValueError('一覧ページに取得可能な記事リンクなし（HTML構造変更の可能性）')
             except Exception as exc:
                 errors.append({'paper':paper,'category':category,'reason':str(exc)[:250]});continue
-            for url,title in links[:100 if paper=='読売' else 32]:
-                target=category if paper!='読売' else classify_yahoo(title)
-                if target is None or len(groups[f'{paper}|{target}'])>=7:continue
+            for url,title in links[:32]:
+                if len(groups[f'{paper}|{category}'])>=7: break
                 try:
-                    item=article_data(url,paper,target,title)
-                    if item['title']:
-                        groups[f'{paper}|{target}'].append(item)
-                except (Exception) as exc:
-                    # Individual articles may be inaccessible; preserve partial success.
-                    errors.append({'paper':paper,'category':target,'url':url,'reason':str(exc)[:200]})
+                    item=article_data(url,paper,category,title)
+                    if item['title']: groups[f'{paper}|{category}'].append(item)
+                except Exception as exc:
+                    errors.append({'paper':paper,'category':category,'url':url,'reason':str(exc)[:200]})
                 time.sleep(.1)
-            if paper=='読売':
-                # Only traverse an actual visible pagination link, never manufacture a page URL.
-                for anchor in s.select('a[href]'):
-                    if all(len(groups[f'読売|{c}'])>=7 for c in ('政治','経済','国際')):break
-                    label=clean(anchor.get_text(' ',strip=True))
-                    if label not in ('次へ','次のページ','2'):continue
-                    nexturl=urllib.parse.urljoin(listing,anchor['href'])
-                    if urllib.parse.urlsplit(nexturl).netloc!='news.yahoo.co.jp': continue
-                    try:
-                        s2=soup_of(nexturl)
-                        for url,title in list(candidates(s2,nexturl,paper))[:100]:
-                            target=classify_yahoo(title)
-                            if not target or len(groups[f'読売|{target}'])>=7:continue
-                            try: groups[f'読売|{target}'].append(article_data(url,paper,target,title))
-                            except Exception as exc: errors.append({'paper':'読売','category':target,'url':url,'reason':str(exc)[:200]})
-                        break
-                    except Exception as exc:errors.append({'paper':'読売','category':'共通','reason':'次ページ: '+str(exc)[:180]})
-    return {'fetched_at':NOW.isoformat(timespec='minutes'),'articles':[a for g in groups.values() for a in g],
-            'errors':errors,'counts':{k:len(v) for k,v in groups.items()},'sources':SOURCES,
+
+    # Yomiuri comes from a combined Yahoo listing with no reliable topical
+    # section. List and classify first, then verify author and article metadata.
+    listing=SOURCES['読売']['共通']
+    current=listing
+    visited=set()
+    stats={'pages':0,'listed':0,'classified':{'政治':0,'経済':0,'国際':0},'unclassified':0,'unclassified_examples':[], 'article_failures':{'政治':0,'経済':0,'国際':0}}
+    for page in range(4):
+        if not current or current in visited: break
+        visited.add(current)
+        try:
+            s=soup_of(current)
+            links=list(candidates(s,current,'読売'))
+            if not links: raise ValueError('一覧ページに取得可能な記事リンクなし（HTML構造変更の可能性）')
+        except Exception as exc:
+            errors.append({'paper':'読売','category':'共通','reason':f'{page+1}ページ目：{str(exc)[:200]}'})
+            break
+        stats['pages']+=1
+        stats['listed']+=len(links)
+        for url,title in links:
+            target=classify_yahoo(title)
+            if target is None:
+                stats['unclassified']+=1
+                if len(stats['unclassified_examples'])<6: stats['unclassified_examples'].append(title[:90])
+                continue
+            stats['classified'][target]+=1
+            if len(groups[f'読売|{target}'])>=7: continue
+            try:
+                item=article_data(url,'読売',target,title)
+                if item['title']: groups[f'読売|{target}'].append(item)
+            except Exception as exc:
+                stats['article_failures'][target]+=1
+                errors.append({'paper':'読売','category':target,'url':url,'reason':str(exc)[:200]})
+            time.sleep(.1)
+        if all(len(groups[f'読売|{c}'])>=7 for c in ('政治','経済','国際')): break
+        current=yomiuri_next_page(s,current,visited)
+    for cat in ('政治','経済','国際'):
+        if len(groups[f'読売|{cat}'])==0:
+            errors.append({'paper':'読売','category':cat,'reason':f"配信一覧{stats['pages']}ページ・全{stats['listed']}候補で{cat}分類{stats['classified'][cat]}件、記事確認失敗{stats['article_failures'][cat]}件、分類保留{stats['unclassified']}件。0件は当該分野のニュースが存在しない証明ではありません。"})
+    return {'fetched_at':NOW.isoformat(timespec='minutes'),
+            'articles':[a for g in groups.values() for a in g],
+            'errors':errors,
+            'counts':{k:len(v) for k,v in groups.items()},
+            'diagnostics':{'yomiuri':stats},
+            'sources':SOURCES,
             'note':'読売の記事リンクと日時はYahooニュース配信版。読売本体の公開日時や有料表示ではありません。'}
 
 def main():
