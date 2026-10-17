@@ -1,129 +1,166 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172b40"><title>三紙ニュース｜自動三紙比較</title><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#172b40"><title>三紙ニュース Ver.4｜履歴照合</title><style>
 :root{font:15px/1.7 -apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN",sans-serif;color:#192a3a;background:#f3f5f8}*{box-sizing:border-box}body{margin:0}header{background:#172b40;color:white;padding:22px max(18px,calc((100vw - 920px)/2))}h1{margin:0;font-size:24px}header p{margin:3px 0;color:#c9d5e0;font-size:13px}main{max-width:956px;margin:auto;padding:18px 18px 60px}.switch{display:flex;gap:6px;margin:12px 0}.switch button{flex:1}button,select{font:inherit;background:#fff;border:1px solid #cad5df;border-radius:10px;padding:9px 12px;cursor:pointer;color:#253d52}button[aria-pressed="true"]{background:#193d5d;color:white;border-color:#193d5d;font-weight:700}.bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}.bar label{font-size:13px}select{max-width:100%}.notice{border-left:4px solid #b78349;background:#fff7ed;padding:12px 15px;border-radius:8px;font-size:13px;line-height:1.8}.card,.group{background:#fff;border:1px solid #dce3e9;border-radius:13px;margin:12px 0;padding:16px;box-shadow:0 2px 12px #0c2a4306}.card h3,.group h3{margin:0 0 7px;font-size:17px}.description{margin:5px 0 10px;color:#4c5d6b;font-size:14px}.byline{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12px;color:#657786;margin-bottom:7px}.small{font-size:12px;color:#72808e}.pill{border-radius:6px;background:#edf1f6;padding:2px 7px;font-size:11px}.paper-title{font-size:19px;margin:24px 0 4px}.paper-item{border-top:1px solid #e7ebef;padding:12px 0}.paper-item:first-of-type{border-top:0}.paper-item h3{font-size:16px;margin:0 0 4px}.paper-item a{color:#12568e;text-decoration:none}.paper-item a:hover{text-decoration:underline}.compare-paper{border-top:1px solid #e5e9ee;padding:12px 0}.compare-paper strong{font-size:13px;color:#446174}.analysis{border-top:1px solid #ccd6df;margin-top:5px;padding-top:12px;font-size:14px}.empty{padding:15px;color:#75818a}.disclaimer{font-size:12px;color:#637487;margin-top:23px}#notice-area{margin-top:12px}@media(min-width:800px){.newsgroup{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.newsgroup .card{margin:0}.paper-item{min-width:0}}@media(max-width:600px){.bar{align-items:stretch}.bar select{flex:1}h1{font-size:22px}}
-</style></head><body><header><h1>三紙ニュース</h1><p>朝日・毎日・読売｜政治・経済・国際｜自動比較対応</p></header><main>
+</style></head><body><header><h1>三紙ニュース</h1><p>朝日・毎日・読売｜政治・経済・国際｜自動比較・48時間の履歴照合</p></header><main>
 <div class="switch" role="group" aria-label="表示方法"><button data-view="list" aria-pressed="true">記事一覧</button><button data-view="compare" aria-pressed="false">三紙比較</button></div>
 <div class="switch" role="group" aria-label="分野"><button data-cat="政治" aria-pressed="true">政治</button><button data-cat="経済" aria-pressed="false">経済</button><button data-cat="国際" aria-pressed="false">国際</button></div>
 <div class="bar"><label for="edition">閲覧する配信</label><select id="edition"><option value="latest.json">自動取得の最新版</option><option value="snapshot-20261016-1700.json">10月16日 17:00 試作</option></select><label for="paper">新聞</label><select id="paper"><option>すべて</option><option>朝日</option><option>毎日</option><option>読売</option></select></div>
-<div id="notice-area"></div><div id="results"></div><p class="disclaimer">元記事にリンクできるのはURL確認済みの記事のみ。同一ニュース比較は見出し・公開説明・日時の一致度を使った自動候補抽出です。誤判定の可能性があるため、各記事を開いて確認してください。本文全体の論調は推測しません。</p>
+<div id="notice-area"></div><div id="results"></div><p class="disclaimer">元記事にリンクできるのはURL確認済みの記事のみ。同一事件比較は最大48時間の履歴から見出し・公開説明・日時を照合した自動候補抽出です。誤判定の可能性があるため、各記事を開いて確認してください。本文全体の論調は推測しません。</p>
 </main><script>
 'use strict';
-// Conservative, offline matching. No remote AI and no guessed article bodies.
+'use strict';
+/* Conservative cross-paper comparison of public headlines and summaries. */
 const CompareEngine = (() => {
-  const PUBLISHER = /[（(]\s*(?:読売新聞オンライン|毎日新聞|朝日新聞|読売新聞)\s*[）)]|\s*[-－]\s*(?:毎日新聞|読売新聞オンライン|朝日新聞)\s*$/g;
-  const eventSets = [
-    ['閣僚交代','更迭|辞任|辞職|退任|農相交代|新農相|前農相|後任|任命責任|進退'],
-    ['政治資金','政治資金|パーティー|議員会館|内規違反|厳重注意|収支報告書'],
-    ['外国記者拘束','記者拘束|新聞記者|領事通報|報道の自由|スパイ容疑'],
-    ['G7会議','G7|首脳会合|首脳会議|オンライン会合|回線が間に合わ'],
-    ['ニデック不正','ニデック|永守|不正会計|粉飾決算'],
-    ['金融政策','日銀|金融政策|政策金利|金利引き上げ|利上げ'],
-    ['半導体','TSMC|半導体|熊本第2工場|熊本第二工場'],
-    ['消費税','消費減税|消費税減税|プレミアム商品券|外食産業|GoTo'],
-    ['情報漏えい','情報漏えい|情報流出|顧客情報|不正アクセス|サイバー攻撃'],
-    ['原子力潜水艦','原子力潜水艦|原潜'],
-    ['ICC','ICC|国際刑事裁判所'],
-    ['ウクライナ','ウクライナ|ロシア軍|パトリオットミサイル'],
-    ['議会','議会|議員|県議|衆院|参院'],
-    ['選挙','選挙|候補者|立候補|補欠選挙|補選'],
-    ['外交','外交|大使|外相|首脳会談'],
-    ['軍事','ミサイル|軍事|防衛|空爆|攻撃|停戦'],
-    ['企業','企業|会社|社長|会長|取締役|株式'],
-    ['物価','物価|インフレ|デフレ|賃金'],
-    ['制度','法案|条例|制度|予算|規制']
-  ];
+  const publishers = /[（(]\s*(?:読売新聞オンライン|毎日新聞|朝日新聞|読売新聞)\s*[）)]|\s*[-－]\s*(?:毎日新聞|読売新聞オンライン|朝日新聞)\s*$/g;
+  function normalize(x) { return String(x||'').normalize('NFKC').toLowerCase().replace(publishers,'').replace(/文部科学相|文部科学大臣/g,'文科相').replace(/農林水産相|農水相/g,'農相').replace(/簗前農相|簗氏/g,'簗農相').replace(/北海道新聞の記者/g,'北海道新聞記者').replace(/[\s「」『』（）()\[\]【】,.、。・\-―—!?！？:：]/g,''); }
   const anchors = [
-    '高市','簗','関文科相','ニデック','永守','TSMC','熊本第2工場','G7','ロシア','北海道新聞','沖縄','オスプレイ','トランプ','中国','日銀','植田','イスラエル','イラン','ウクライナ','ICC',
-    'ベネズエラ','マドゥロ','兵庫県議','パジェロ','三菱自動車','ホンダ','みずほ','ソースネクスト','ANA','JAL'
+    ['関文科相',/関(?:文科相|文部科学相|文部科学大臣)/],
+    ['簗農相',/簗(?:農相|農水相|前農相|氏|和生)|簗農相/],
+    ['ニデック',/ニデック/],['永守',/永守/],['北海道新聞',/北海道新聞/],
+    ['TSMC',/tsmc|台湾積体電路/],['熊本第二工場',/熊本第?[2二]工場/],
+    ['G7欠席',/G7.{0,24}(?:欠席|不参加)|(?:欠席|不参加).{0,24}G7/i],
+    ['プレミアム商品券',/プレミアム商品券/],['日銀',/日本銀行|日銀/],
+    ['みずほ',/みずほ/],['ソースネクスト',/ソースネクスト/],['タイムズカー',/タイムズカー/],
+    ['原子力潜水艦',/原子力潜水艦|原潜/],['国際刑事裁判所',/国際刑事裁判所|ICC/i],
+    ['チョルノービリ原発',/チョルノービリ|チェルノブイリ/],
+    ['兵庫県議補選',/兵庫県議.{0,6}(?:補選|補欠選挙)|片山安孝|島津明香/],
+    ['防衛費GDP比',/GDP比.?3.?5|防衛費.{0,15}GDP/],
+    ['日本郵便',/日本郵便/],['トヨタ',/トヨタ/],['ホンダ',/ホンダ/],
+    ['植田総裁',/植田.{0,5}総裁/],['パジェロ',/パジェロ/]
   ];
-  const generic = /^(?:報道|首相|政府|政治|経済|国際|日本|新聞|オンライン|配信|発表|問題|日本政府|衆院|参院|国会|重要|議員|国民|影響|可能性|方針|について|対応|関係|明らか|見通し)$/;
-  const focusTerms = ['政治資金パーティー','厳重注意','内規違反','議員会館','任命責任','辞任後','続投','更迭','辞任','説明責任','後任','疑惑','危機管理','会合欠席','オンライン会合','回線','領事通報','記者拘束','北海道新聞記者','不正会計','損害賠償','提訴','9人','発表','自動車','半導体','３ナノ','3ナノ','データ流出','政策金利','利上げ','減税','プレミアム商品券','国際刑事裁判所','制裁','修復','原子力潜水艦','導入','選挙','立候補','投資','増税','減税','発言撤回','謝罪','陳謝'];
-  function normalized(v) { return String(v||'').normalize('NFKC').replace(PUBLISHER,'').replace(/文部科学相/g,'文科相').replace(/簗前農相/g,'簗農相').replace(/前農林水産相|農林水産相/g,'農相').replace(/北海道新聞の記者/g,'北海道新聞記者').replace(/［[^］]*］|\[[^\]]*\]/g,'').replace(/[\s\u3000「」『』、。・,.:：;（）()!?！？…―—–\-]/g,'').toLowerCase(); }
-  function labelTitle(v) {return String(v||'').replace(PUBLISHER,'').replace(/\s+/g,' ').trim();}
-  function grams(s,k) { const x=new Set(); for(let i=0;i+k<=s.length;i++)x.add(s.slice(i,i+k));return x; }
-  function words(s) {const tags=new Set(); for (let [name,re] of eventSets) if(new RegExp(re,'i').test(s))tags.add(name);return tags;}
-  function sharedKnown(a,b) {return anchors.filter(x=>a.includes(normalized(x))&&b.includes(normalized(x)));}
-  function dateMs(v) {let d=Date.parse(v||'');return Number.isFinite(d)?d:null;}
-  function articleText(a) {return normalized(a.title)+'|'+normalized((a.description||'').slice(0,190));}
-  function scorePair(a,b,all) {
-    if(a.paper===b.paper || a.category!==b.category) return 0;
-    let d1=dateMs(a.published),d2=dateMs(b.published);
-    if(d1!==null&&d2!==null&&Math.abs(d1-d2)>72*3600*1000)return 0;
-    const at=normalized(a.title),bt=normalized(b.title),fa=articleText(a).replace('|',''),fb=articleText(b).replace('|','');
-    const ta=words(fa),tb=words(fb),sharedTags=[...ta].filter(x=>tb.has(x));
-    const mutualAnchors=sharedKnown(fa,fb);
-    // Distinctive 4-grams appearing in both titles; ignore phrases shared by many unrelated items.
-    const g1=grams(at,4),g2=grams(bt,4);
-    const common=[...g1].filter(x=>g2.has(x));
-    let unique=0;
-    for(const g of common){let inDocs=all.filter(z=>normalized(z.title).includes(g)).length;
-      if(inDocs<=Math.max(3,Math.ceil(all.length*.12))&&!generic.test(g))unique++;}
-    const jacc=common.length/Math.max(1,new Set([...g1,...g2]).size);
-    // More generic expressions never suffice for an event match.
-    const highSignalTerms=['厳重注意','不正会計','損害賠償','領事通報','記者拘束','参院予算委員会','政治資金パーティー','原子力潜水艦','任命責任','三ナノ','3ナノ','プレミアム商品券'];
-    const sharedDetail=highSignalTerms.filter(w=>fa.includes(normalized(w))&&fb.includes(normalized(w)));
-    const intersectionDescription=grams(fa,5);
-    const detailDescription=[...intersectionDescription].filter(g=>fb.includes(g)&&!generic.test(g));
-    const protectedAnchor=mutualAnchors.some(x=>x.length>1) || sharedDetail.length>0;
-    // Cross-paper pairing must share the concrete subject or an event detail in the HEADLINES.
-    // Shared procedural boilerplate (prime minister, parliamentary Q&A, etc.) is never enough.
-    const headlineAnchors=sharedKnown(at,bt).filter(x=>!['高市','トランプ','中国','ロシア','ウクライナ','日銀'].includes(x));
-    const headlineDetail=highSignalTerms.filter(w=>at.includes(normalized(w))&&bt.includes(normalized(w)));
-    if(!headlineAnchors.length && !headlineDetail.length && !(unique>=5&&jacc>=.18))return 0;
-    const identitySignal=unique>=2 || jacc>=.13 || (mutualAnchors.length&&detailDescription.length>=4);
-    if(!identitySignal || !protectedAnchor) return 0;
-    if(!sharedTags.length && sharedDetail.length===0) return 0;
-    // Single high-frequency actor (e.g. 高市) plus generic politics is not enough.
-    const genericTopics = new Set(['議会','選挙','企業','制度','外交','軍事','物価','ウクライナ']);
-    const topicStrong=sharedTags.some(t=>!genericTopics.has(t));
-    if(!topicStrong && sharedDetail.length===0 && unique<5)return 0;
-    return unique*1.2 + Math.min(8,detailDescription.length)*.23 + sharedDetail.length*3 + mutualAnchors.length*1.5 + jacc*10 + (topicStrong?2:0);
+  const events = [
+    ['厳重注意',/厳重注意/],['議員会館パーティー',/議員会館.{0,20}パーティー|パーティー.{0,20}議員会館/],
+    ['政治資金パーティー',/政治資金パーティー/],
+    ['閣僚更迭',/更迭|農相.{0,6}(?:辞任|交代)|農相.{0,10}任命責任|前農相|後任を選ぶ/],
+    ['任命責任',/任命責任/],['会議欠席',/欠席|不参加|回線が間に合わ/],
+    ['記者拘束',/記者.{0,12}拘束|拘束.{0,12}記者|領事通報/],
+    ['不正会計',/不正会計|粉飾決算/],['損害賠償',/損害賠償|提訴/],
+    ['金融政策',/政策金利|利上げ|金利引き上げ/],
+    ['生産計画',/製造|工場|生産|半導体/],
+    ['商品券',/プレミアム商品券|GoTo|消費減税.*外食|外食.*消費減税/],
+    ['情報流出',/情報流出|個人情報流出|顧客情報漏えい|不正アクセス/],
+    ['原潜導入',/原子力潜水艦|原潜/],
+    ['選挙立候補',/立候補|県議補選|補欠選挙/],
+    ['資金制裁',/制裁|国際刑事裁判所|ICC/],
+    ['原発修復',/原発.{0,10}修復|修復.{0,10}原発/]
+  ];
+  const rareTopics = new Set(['関文科相','簗農相','ニデック','永守','北海道新聞','TSMC','熊本第二工場','G7欠席','プレミアム商品券','原子力潜水艦','兵庫県議補選','チョルノービリ原発','タイムズカー','ソースネクスト','防衛費GDP比','日本郵便','国際刑事裁判所','植田総裁']);
+  const strongEvents = new Set(['厳重注意','議員会館パーティー','閣僚更迭','記者拘束','不正会計','損害賠償','会議欠席','商品券','原潜導入','原発修復']);
+  const focus = ['政治資金パーティー','厳重注意','議員会館','内規違反','任命責任','後任','更迭','辞任','謝罪','続投','会合欠席','回線','領事通報','記者拘束','損害賠償','不正会計','提訴','政策金利','利上げ','消費減税','外食産業','プレミアム商品券','原子力潜水艦','導入','修復','資金支援','立候補','説明責任'];
+  function tags(input, definitions) {const result=new Set(); for(const [key,r] of definitions){r.lastIndex=0;if(r.test(input))result.add(key)}return result;}
+  function intersect(a,b){return [...a].filter(x=>b.has(x));}
+  function ngrams(s,n){const o=new Set();for(let i=0;i<=s.length-n;i++)o.add(s.slice(i,i+n));return o;}
+  function prepare(article){const title=normalize(article.title);const body=normalize(article.description).slice(0,240);const text=title+'。'+body;return {...article,_title:title,_text:text,_anchors:tags(text,anchors),_headlineAnchors:tags(title,anchors),_events:tags(text,events),_grams:ngrams(title,4)};}
+  function pair(a,b){
+    if(a.paper===b.paper)return 0;
+    const time1=Date.parse(a.published),time2=Date.parse(b.published);
+    if(Number.isFinite(time1)&&Number.isFinite(time2)&&Math.abs(time1-time2)>72*3600*1000)return 0;
+    const commonAnchors=intersect(a._anchors,b._anchors).filter(x=>rareTopics.has(x));
+    const titleAnchors=intersect(a._headlineAnchors,b._headlineAnchors).filter(x=>rareTopics.has(x));
+    const commonEvents=intersect(a._events,b._events);
+    const strong=commonEvents.filter(x=>strongEvents.has(x));
+    const titleCommon=[...a._grams].filter(x=>b._grams.has(x));
+    const overlap=titleCommon.length/Math.max(1,Math.min(a._grams.size,b._grams.size));
+    // Only a named subject in both public accounts or highly distinctive shared headline
+    // phrasing establishes same-event evidence. General politicians/parties never suffice.
+    if(!commonAnchors.length && !(strong.length && titleCommon.length>=5 && overlap>=.24))return 0;
+    if(!commonEvents.length && !(titleAnchors.length && overlap>=.30))return 0;
+    if(!strong.length && overlap<.23 && !(titleAnchors.length&&commonEvents.length>=2))return 0;
+    if(!titleAnchors.length && titleCommon.length<2 && !strong.length)return 0;
+    return commonAnchors.length*5 + titleAnchors.length*3 + strong.length*4 + commonEvents.length*1.5 + Math.min(12,titleCommon.length)*.7 + overlap*8;
   }
-  function focus(a,other) {
-    let title=normalized(a.title);let otherText=other.map(b=>normalized(b.title)).join('~');
-    const choices=focusTerms.filter(t=>title.includes(normalized(t))&&!otherText.includes(normalized(t)));
-    // Longest first; avoid selecting substrings of already selected terms.
-    choices.sort((x,y)=>y.length-x.length);
-    let selected=[];
-    for(const c of choices){if(selected.some(w=>normalized(w).includes(normalized(c))))continue;selected.push(c);if(selected.length===2)break;}
-    return selected.length?selected.join('・'):'';
+  function differences(group){
+    let findings=[];
+    for(const a of group){
+      const other=group.filter(x=>x!==a).map(x=>normalize(x.title)).join('|');
+      let keys=focus.filter(s=>a._title.includes(normalize(s))&&!other.includes(normalize(s)));
+      if(keys.length)findings.push(`${a.paper}は見出しで「${keys.slice(0,2).join('・')}」に言及`);
+    }
+    if(findings.length>=2)return '見出しの焦点：'+findings.join('、')+'。記事本文全体の論調を評価したものではありません。';
+    if(findings.length)return findings.join('。')+'。他紙が同じ点に触れていないとは限りません。';
+    return '同一事件を扱う候補です。公開見出しだけから各紙の着眼点の違いは断定できません。';
   }
-  function analysis(group) {
-    const distinct=group.map(a=>[a.paper,focus(a,group.filter(x=>x!==a))]).filter(x=>x[1]);
-    if(distinct.length>=2) return '公開見出しの強調点：'+distinct.map(([p,s])=>p+'「'+s+'」').join('、')+'。本文全体の論調を比較したものではありません。';
-    if(distinct.length===1)return '見出しでは'+distinct[0][0]+'が「'+distinct[0][1]+'」を明記しています。ほかの紙も同じ点を論じていないとは限りません。';
-    return '公開見出しと説明には共通点がありますが、強調点の違いを確実に特定できません。本文全体の論調比較ではありません。';
-  }
-  function build(articles) {
-    let eligible=(articles||[]).filter(a=>a&&a.title&&a.paper&&a.category && ['朝日','毎日','読売'].includes(a.paper));
-    const groups=[];
-    for(const cat of ['政治','経済','国際']){
-      let items=eligible.filter(a=>a.category===cat);
-      const edges=[];
-      for(let i=0;i<items.length;i++)for(let j=i+1;j<items.length;j++){
-        let s=scorePair(items[i],items[j],items);
-        if(s>=7.1)edges.push({i,j,s});
+  function build(raw){
+    const seen=new Map();
+    for(const a of raw||[]){
+      if(!a||!a.paper||!a.title||!['朝日','毎日','読売'].includes(a.paper))continue;
+      const norm=normalize(a.title);
+      const id=a.paper+'|'+(a.url||norm);
+      const old=seen.get(id);
+      if(!old||String(a.description||'').length>String(old.description||'').length)seen.set(id,a);
+    }
+    const all=[...seen.values()].map(prepare);
+    let pairs=[];
+    for(let i=0;i<all.length;i++)for(let j=i+1;j<all.length;j++){
+      const score=pair(all[i],all[j]);if(score>=12)pairs.push({i,j,score});
+    }
+    pairs.sort((a,b)=>b.score-a.score);
+    const reserved=new Set(),groups=[];
+    for(const p of pairs){
+      if(reserved.has(p.i)||reserved.has(p.j))continue;
+      const ix=[p.i,p.j];
+      for(let k=0;k<all.length;k++){
+        if(reserved.has(k)||ix.includes(k)||ix.some(i=>all[i].paper===all[k].paper))continue;
+        if(ix.every(i=>pair(all[i],all[k])>=12))ix.push(k);
       }
-      edges.sort((a,b)=>b.s-a.s);
-      const claimed=new Set();
-      for(const edge of edges){
-        if(claimed.has(edge.i)||claimed.has(edge.j)) continue;
-        const members=[edge.i,edge.j];
-        for(const k of items.map((_,i)=>i)) {
-          if(claimed.has(k)||members.includes(k)||members.some(m=>items[m].paper===items[k].paper))continue;
-          if(members.every(m=>scorePair(items[m],items[k],items)>=7.1))members.push(k);
-        }
-        members.forEach(k=>claimed.add(k));
-        let group=members.map(i=>items[i]).sort((a,b)=>['朝日','毎日','読売'].indexOf(a.paper)-['朝日','毎日','読売'].indexOf(b.paper));
-        let topic=group.map(a=>labelTitle(a.title)).sort((a,b)=>a.length-b.length)[0];
-        groups.push({category:cat,topic,items:group.map(a=>[a.paper,a.title]),analysis:analysis(group),automatic:true});
-      }
+      ix.forEach(i=>reserved.add(i));
+      let items=ix.map(i=>all[i]).sort((a,b)=>['朝日','毎日','読売'].indexOf(a.paper)-['朝日','毎日','読売'].indexOf(b.paper));
+      let title=items.map(a=>String(a.title).replace(publishers,'')).sort((a,b)=>a.length-b.length)[0];
+      let categories=[...new Set(items.map(x=>x.category))];
+      groups.push({category:categories[0],categories,topic:title,items:items.map(a=>[a.paper,a.title]),articles:items.map(a=>{let {_title,_text,_anchors,_headlineAnchors,_events,_grams,...rest}=a;return rest}),analysis:differences(items),automatic:true});
     }
     return groups;
   }
-  return {build,scorePair,normalized};
+  return {build,pair,normalize};
 })();
 if(typeof module!=='undefined')module.exports=CompareEngine;
 
+const state={view:'list',cat:'政治',paper:'すべて',data:null,pool:[],historyCount:0,comparisons:[]};
+let edition=document.getElementById('edition');
+const R=document.getElementById('results'),N=document.getElementById('notice-area');
+function e(t,c,x){const n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n;}
+function fmt(t){if(!t||t==='確認できず')return '確認できず';let d=new Date(t);return Number.isNaN(+d)?t:d.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});}
+function head(a){let h=e('h3');if(a.url&&/^https:\/\//.test(a.url)){let l=e('a','',a.title);l.href=a.url;l.target='_blank';l.rel='noopener noreferrer';h.append(l);}else h.textContent=a.title+'（リンク未確認）';return h;}
+function articleNode(a){let n=e('div','paper-item');n.append(head(a),e('p','description',a.description||'確認できず'),e('div','small',`公開日時：${fmt(a.published)} ／ 有料表示：${a.paid||'確認できず'}${a.paper==='読売'?' ／ Yahoo配信情報':''}`));return n;}
+function render(){
+  if(!state.data)return;const d=state.data;N.replaceChildren();R.replaceChildren();
+  N.append(e('div','notice',d.snapshot?'これは10月16日17時のチャット配信を再構成した試作です。元記事・公開日時・有料区分は再検証していません。':`取得日時：${fmt(d.fetched_at)}（日本時間）。ニュース比較は最新号と直近48時間の取得履歴を対象とし、同一事件の根拠を確認できる記事だけを表示します。`));
+  if(d.errors?.length){let details=e('details','card');details.append(e('summary','','取得上の問題・未確認事項'));d.errors.forEach(x=>details.append(e('p','small',`${x.paper}：${x.reason}`)));N.append(details);}
+  const papers=['朝日','毎日','読売'].filter(p=>state.paper==='すべて'||state.paper===p);
+  const articles=(d.articles||[]).filter(x=>x.category===state.cat&&papers.includes(x.paper));
+  if(state.view==='list'){
+    for(const p of papers){const sec=e('section','card');const aa=articles.filter(x=>x.paper===p);sec.append(e('h2','paper-title',p+'新聞　'+aa.length+'本'));if(!aa.length)sec.append(e('p','empty','該当記事なし／取得できず'));aa.forEach(a=>sec.append(articleNode(a)));R.append(sec);}return;
+  }
+  let comparisons=(d.snapshot?(d.comparisons||[]):state.comparisons).filter(x=>(x.categories||[x.category]).includes(state.cat)&&x.items.some(i=>papers.includes(i[0])));
+  if(!d.snapshot)N.append(e('p','small',`比較の照合対象：${state.pool.length}記事（直近${state.historyCount}回の取得履歴を含む）。最新号の一覧は「記事一覧」から確認できます。`));
+  if(!comparisons.length){R.append(e('div','card',d.snapshot?'この分野で照合できる同一テーマの比較はありません。記事一覧を参照してください。':'直近48時間の公開見出し・説明を照合しましたが、別の新聞の同一事件と確認できる記事はありませんでした。条件を緩めて別の事件を結びつけることはしません。記事一覧は表示できます。'));return;}
+  for(let group of comparisons){const sec=e('section','group');sec.append(e('div','small',state.cat+'｜'+(group.automatic?'同一事件の自動照合候補':'共通テーマ')),e('h3','',group.topic));for(let [p,title] of group.items){if(!papers.includes(p))continue;let a=group.articles?.find(x=>x.paper===p&&x.title===title) || articles.find(x=>x.paper===p&&x.title===title);let n=e('div','compare-paper');n.append(e('strong','',p+'新聞'));if(a)n.append(head(a),e('p','description',a.description||'確認できず'),e('div','small',`公開日時：${fmt(a.published)} ／ 有料表示：${a.paid||'確認できず'}${a.paper==='読売'?' ／ Yahoo配信日時':''}`));else n.append(e('p','small','記事を確認できず'));sec.append(n);}if(state.paper==='すべて')sec.append(e('div','analysis','焦点の違い：'+group.analysis));R.append(sec);}
+  R.append(e('p','small','※ 掲載時刻に差があるため、直近48時間の履歴も照合します。自動判定には誤照合の可能性があります。新聞間の論調を推測したものではありません。'));
+}
+async function getJSON(path){const resp=await fetch('data/'+path+'?v='+Date.now(),{cache:'no-store'});if(!resp.ok)throw Error(`HTTP ${resp.status}: ${path}`);return await resp.json();}
+async function historyPool(latest){
+  const now=Date.parse(latest.fetched_at||'');let all=[...(latest.articles||[])],count=0;
+  try{
+    const index=await getJSON('index.json');if(!Array.isArray(index))return {articles:all,count};
+    const relevant=index.filter(x=>x&&typeof x.file==='string'&&/^history\/\d{8}_\d{4}\.json$/.test(x.file)&&(!Number.isFinite(now)||!Number.isFinite(Date.parse(x.fetched_at))||(now-Date.parse(x.fetched_at)>=0&&now-Date.parse(x.fetched_at)<=48*3600*1000))).slice(0,12);
+    const past=await Promise.allSettled(relevant.map(x=>getJSON(x.file)));
+    for(const p of past){if(p.status==='fulfilled'&&Array.isArray(p.value.articles)){all.push(...p.value.articles);count++;}}
+  }catch(error){console.warn('履歴取得失敗。最新版だけ照合',error);}
+  const seen=new Map();for(const a of all){if(!a||!a.paper||!a.title)continue;let key=a.paper+'|'+(a.url||CompareEngine.normalize(a.title));const old=seen.get(key);if(!old||String(a.description||'').length>String(old.description||'').length)seen.set(key,a);}return {articles:[...seen.values()],count};
+}
+async function load(){
+  try{
+    R.replaceChildren(e('div','card','記事データを読み込んでいます。'));
+    const selected=edition.value,d=await getJSON(selected);
+    // Never silently compare an old edition with newly fetched data.
+    let pool={articles:d.articles||[],count:0};
+    if(!d.snapshot&&selected==='latest.json')pool=await historyPool(d);
+    if(edition.value!==selected)return;
+    state.data=d;state.pool=pool.articles;state.historyCount=pool.count;state.comparisons=d.snapshot?[]:CompareEngine.build(pool.articles);render();
+  }catch(err){R.replaceChildren(e('div','notice','データを読み込めませんでした：'+err.message));}
+}
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;if(state.view==='compare'&&state.paper!=='すべて'){state.paper='すべて';document.getElementById('paper').value='すべて';}document.querySelectorAll('[data-view]').forEach(x=>x.setAttribute('aria-pressed',x===b));render();});
+document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{state.cat=b.dataset.cat;document.querySelectorAll('[data-cat]').forEach(x=>x.setAttribute('aria-pressed',x===b));render();});
+document.getElementById('paper').onchange=x=>{state.paper=state.view==='compare'?'すべて':x.target.value;if(state.view==='compare')x.target.value='すべて';render();};
+edition.onchange=load;load();
 
-const state={view:'list',cat:'政治',paper:'すべて',data:null};let edition=document.getElementById('edition');const R=document.getElementById('results');const N=document.getElementById('notice-area');function e(t,c,x){let n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}function fmt(t){if(!t||t==='確認できず')return '確認できず';let d=new Date(t);return Number.isNaN(+d)?t:d.toLocaleString('ja-JP',{timeZone:'Asia/Tokyo',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})}function head(article){let h=e('h3');if(article.url&&/^https:\/\//.test(article.url)){let a=e('a','',article.title);a.href=article.url;a.target='_blank';a.rel='noopener noreferrer';h.append(a)}else h.textContent=article.title+'（リンク未確認）';return h}function articleNode(a){let n=e('div','paper-item');n.append(head(a),e('p','description',a.description||'確認できず'),e('div','small',`公開日時：${fmt(a.published)} ／ 有料表示：${a.paid||'確認できず'}${a.paper==='読売'?' ／ Yahoo配信情報':''}`));return n}function render(){if(!state.data)return;const d=state.data;N.replaceChildren();R.replaceChildren();const warning=e('div','notice',d.snapshot?'これは10月16日17時のチャット配信を再構成した試作です。元記事・公開日時・有料区分の再検証は行っていません。実際に検証できた最新ニュースとは区別してください。':`取得日時：${fmt(d.fetched_at)}（日本時間）。比較は公開見出し・説明の自動照合。取得エラーは画面に記載します。`);N.append(warning);if(d.errors?.length){let details=e('details','card');details.append(e('summary','','取得上の問題・未確認事項'));d.errors.forEach(x=>details.append(e('p','small',`${x.paper}：${x.reason}`)));N.append(details)}let papers=['朝日','毎日','読売'].filter(p=>state.paper==='すべて'||state.paper===p);let articles=(d.articles||[]).filter(x=>x.category===state.cat&&papers.includes(x.paper));if(state.view==='list'){for(let p of papers){let sec=e('section','card');const aa=articles.filter(x=>x.paper===p);sec.append(e('h2','paper-title',p+'新聞　'+aa.length+'本'));if(!aa.length)sec.append(e('p','empty','該当記事なし／取得できず'));aa.forEach(a=>sec.append(articleNode(a)));R.append(sec)}return}let comparisons=(d.snapshot?(d.comparisons||[]):CompareEngine.build(d.articles||[])).filter(x=>x.category===state.cat&&x.items.some(i=>papers.includes(i[0])));if(!comparisons.length){R.append(e('div','card',d.snapshot?'この分野で照合できる同一テーマの比較はありません。記事一覧を参照してください。':'公開見出し・説明から、別の新聞による同一事件の記事を十分な根拠で照合できませんでした。比較対象が見つからない記事も「記事一覧」に残しています。'));return}for(let group of comparisons){let sec=e('section','group');sec.append(e('div','small',state.cat+'｜'+(group.automatic?'自動照合した候補（2紙以上）':'共通テーマ')),e('h3','',group.topic));for(let [p,title] of group.items){if(!papers.includes(p))continue;let a=articles.find(x=>x.paper===p&&x.title===title);let n=e('div','compare-paper');n.append(e('strong','',p+'新聞'));if(a)n.append(head(a),e('p','description',a.description),e('div','small',`公開日時：${fmt(a.published)} ／ 有料表示：${a.paid}`));else n.append(e('p','small','記事を取得できず'));sec.append(n)}if(state.paper==='すべて')sec.append(e('div','analysis','見出しの比較：'+group.analysis));R.append(sec)}let note=e('p','small','※ 三紙が揃わない場合も、二紙で照合できれば表示します。自動判定のため誤照合はあり得ます。比較不能な見出しは記事一覧に残します。');R.append(note)}async function load(){try{let r=await fetch('data/'+edition.value+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);state.data=await r.json();render()}catch(err){R.replaceChildren(e('div','notice','データを読み込めませんでした：'+err.message))}}document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;if(state.view==='compare'&&state.paper!=='すべて'){state.paper='すべて';document.getElementById('paper').value='すべて';}document.querySelectorAll('[data-view]').forEach(x=>x.setAttribute('aria-pressed',x===b));render()});document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{state.cat=b.dataset.cat;document.querySelectorAll('[data-cat]').forEach(x=>x.setAttribute('aria-pressed',x===b));render()});document.getElementById('paper').onchange=x=>{state.paper=state.view==='compare'?'すべて':x.target.value;if(state.view==='compare')x.target.value='すべて';render()};edition.onchange=load;load();
 </script></body></html>
