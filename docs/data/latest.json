@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-17T09:15+09:00",
+  "fetched_at": "2026-10-17T09:38+09:00",
   "articles": [
     {
       "paper": "朝日",
@@ -184,16 +184,6 @@
     {
       "paper": "朝日",
       "category": "国際",
-      "title": "2千円の枕も分割払い? 膨らむクレカの債務、ブラジル高金利のわな",
-      "url": "https://www.asahi.com/articles/ASVBH75CLVBHUHBI02JM.html?iref=_international_international_list_n",
-      "description": "25日に決選投票が行われるブラジルの大統領選で、現職のルラ大統領と、新顔のフラビオ・ボルソナーロ上院議員がそろって、「金利引き下げ」を訴えている。クレジットカードで多額の債務を抱える人が多く、「金利…",
-      "published": "2026-10-17T08:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
       "title": "「万人のための防衛、女性の関与重要」 カナダ軍の制服組トップ語る",
       "url": "https://www.asahi.com/articles/ASVBJ13HMVBJUHBI019M.html?iref=_international_international_list_n",
       "description": "■カナダ軍のジェニー・カリニャン参謀総長に聞く カナダ軍の制服組トップのジェニー・カリニャン参謀総長が訪日に合わせ、朝日新聞の取材に応じた。現在、北大西洋条約機構（NATO）に加盟する32カ国で、女性…",
@@ -208,6 +198,16 @@
       "url": "https://www.asahi.com/articles/ASVBJ71Y8VBJUHBI02XM.html?iref=_international_international_list_n",
       "description": "ロシアのプーチン大統領は16日、国境を接するウクライナ北東部スーミ州などの占領地について、ロシアの安全保障に重要な「緩衝地帯」だと主張した。「和平協議で議題にする計画はない」とし、事実上の「領土放棄…",
       "published": "2026-10-17T06:28:37+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "破産者も生むアメリカの医療費 救急外来1回19万円「幸せを制限」",
+      "url": "https://www.asahi.com/articles/ASVBF4R1ZVBFUHBI00CM.html?iref=_international_international_list_n",
+      "description": "■ハウマッチ アメリカの暮らし（3）医療 長年、アメリカ人の主な破産理由の一つとされてきたのが、医療費だ。治療や薬にかかる費用が高い。日本のように誰もが入れる公的な保険制度もない。医療保険に入って月々…",
+      "published": "2026-10-17T06:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
@@ -443,16 +443,6 @@
     },
     {
       "paper": "読売",
-      "category": "政治",
-      "title": "高市首相、簗前農相を「かばっていたわけではない」…責任の取り方は「後任を選び国政に貢献すること」（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/b50fde92b2958f1b323ff8b88ad0a6b90b2e6ca7",
-      "description": "高市首相は１６日の参院予算委員会の冒頭で、簗和生・前農相の交代について「国会開会中に大臣が辞任する事態となったことは申し訳なく、任命責任を重く受け止める」と陳謝した。そのうえで「国政上の課題は山積し",
-      "published": "2026-10-16T19:20:36+09:00",
-      "paid": "確認できず",
-      "date_source": "Yahoo配信日時"
-    },
-    {
-      "paper": "読売",
       "category": "経済",
       "title": "「外国人材雇用サポートデスク」利用の団体・個人情報が漏えいか…イベント参加でフォーム入力の氏名や企業名、在留資格の分類（読売新聞オンライン）",
       "url": "https://news.yahoo.co.jp/articles/a63f8ac7f7193816ce6df4ec6222160e0a6a7851",
@@ -468,6 +458,16 @@
       "url": "https://news.yahoo.co.jp/articles/d2967f3a5251d95ca2c26e5a8c4fa07cf23bc383",
       "description": "【ニューヨーク＝木瀬武】１６日のニューヨーク株式市場で、ダウ平均株価（３０種）の終値は前日比１７５・２８ドル安の５万２００２・４１ドルだった。値下がりは２日ぶり。【グラフ】一目でわかる…灯油の全国平",
       "published": "2026-10-17T06:07:39+09:00",
+      "paid": "確認できず",
+      "date_source": "Yahoo配信日時"
+    },
+    {
+      "paper": "読売",
+      "category": "国際",
+      "title": "韓国のＬＣＣエアプサン、運休中の長崎―釜山線を来年１月に再開へ…２月２８日まで週３往復を予定（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/bc3db3ccaf9225f5843e18568d0848acc5d504fb",
+      "description": "４月から運休している韓国の格安航空会社（ＬＣＣ）・エアプサンの長崎―釜山（プサン）線が、来年１月に再開されることが分かった。運航期間は１月５日～２月２８日で、週３往復を予定している。【写真】歓迎を受",
+      "published": "2026-10-17T09:27:18+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
@@ -532,7 +532,20 @@
       "date_source": "Yahoo配信日時"
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "url": "https://www.asahi.com/articles/ASVBH75CLVBHUHBI02JM.html?iref=_international_international_list_n",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "paper": "読売",
+      "category": "国際",
+      "url": "https://news.yahoo.co.jp/articles/4064fdc96302231d76667554fc219a9fa2ea1ff6",
+      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
+    }
+  ],
   "counts": {
     "朝日|政治": 7,
     "朝日|経済": 7,
@@ -540,9 +553,9 @@
     "毎日|政治": 7,
     "毎日|経済": 7,
     "毎日|国際": 7,
-    "読売|政治": 3,
+    "読売|政治": 2,
     "読売|経済": 2,
-    "読売|国際": 6
+    "読売|国際": 7
   },
   "sources": {
     "朝日": {
