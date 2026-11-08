@@ -1,6 +1,66 @@
 {
-  "fetched_at": "2026-11-08T05:20+09:00",
+  "fetched_at": "2026-11-08T17:35+09:00",
   "articles": [
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "新潟県小千谷市長選、現職の宮崎悦男氏が無投票で再選 2期目へ",
+      "url": "https://www.asahi.com/articles/ASVC74WHYVC7OXIE02BM.html?iref=_politics_politics_list_n",
+      "description": "新潟県小千谷市長選は8日告示され、無所属で現職の宮崎悦男氏（60）のほかに立候補の届け出がなく、宮崎氏の再選が決まった。 2022年の前回市長選で新顔3人の争いを制して県議から市長に。1期目は広域的…",
+      "published": "2026-11-08T17:25:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "松山市長選挙が告示、3人が届け出 知事とのダブル選、15日投開票",
+      "url": "https://www.asahi.com/articles/ASVC80SBVVC8PLXB003M.html?iref=_politics_politics_list_n",
+      "description": "松山市長選が8日、告示され、元会社員の木下豪氏（44）、前県議の中野泰誠氏（44）=立憲、国民推薦=、前市議の田中エリナ氏（42）の新顔3人が、いずれも無所属での立候補を届け出た。現職と新顔2人の計…",
+      "published": "2026-11-08T17:24:02+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "松山市長選は新顔による三つどもえの戦い 立候補したのはどんな人？",
+      "url": "https://www.asahi.com/articles/ASVC81H0HVC8PLXB004M.html?iref=_politics_politics_list_n",
+      "description": "松山市長選が8日、告示され、無所属の新顔3人が立候補を届け出た。 立候補したのは元会社員の木下豪氏（44）と前県議の中野泰誠氏（44）=立憲、国民推薦=、前市議の田中エリナ氏（42）の3人。県知事選…",
+      "published": "2026-11-08T17:15:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "新潟県妙高市長選、現職の城戸陽二氏が無投票で再選 2期目へ",
+      "url": "https://www.asahi.com/articles/ASVC7548BVC7OXIE02CM.html?iref=_politics_politics_list_n",
+      "description": "新潟県妙高市長選は8日告示され、無所属で現職の城戸陽二氏（59）のほかに立候補の届け出がなく、城戸氏の再選が決まった。同日告示の市議補選（被選挙数1）も無所属新顔の岡田麻梨亜氏（37）以外に届け出は…",
+      "published": "2026-11-08T17:15:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "米国の「核の傘」にはもう頼れない？ 日本の核議論の現在地は",
+      "url": "https://www.asahi.com/articles/ASVC60QF9VC6UTFK019M.html?iref=_politics_politics_list_n",
+      "description": "米国の中間選挙では、トランプ大統領の共和党が歴史的な敗北を喫した。議会に手足を縛られるトランプ氏が外に目を向け、外交・安全保障面でますます強硬姿勢を取るのか。トランプ氏の動向を、日本もかたずをのんで…",
+      "published": "2026-11-08T11:30:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "どうなる投票率 13人立候補の福岡市長選、向上に向けた選管の一手",
+      "url": "https://www.asahi.com/articles/ASVC64RZDVC6TIPE00NM.html?iref=_politics_politics_list_n",
+      "description": "15日投開票の福岡市長選は、過去最多となる新顔13人が立候補する混戦となっている。投票率の行方も注目されるなか、市選挙管理委員会は、移動期日前投票所を全国の政令指定市に先駆けて市長選で導入するなど投…",
+      "published": "2026-11-08T09:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
     {
       "paper": "朝日",
       "category": "政治",
@@ -13,202 +73,152 @@
     },
     {
       "paper": "朝日",
+      "category": "経済",
+      "title": "攻撃者なき漏洩？ サイト閲覧時の個人情報や行動、知らぬ間に外部へ",
+      "url": "https://www.asahi.com/articles/ASVC71W0KVC7ULZU001M.html?iref=_business_business_list_n",
+      "description": "あなたが日ごろスマホやパソコンで何げなくみているウェブサイトが、サイト上で何を見て何を買ったか、あなたがどこからそのサイトを見ているかを、まったく別の会社に渡しているのをご存じだろうか。場合によって…",
+      "published": "2026-11-08T13:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "蛍光灯の製造禁止、27年末に迫る LED化率6割超も、更新に課題",
+      "url": "https://www.asahi.com/articles/ASVC40SDKVC4PLFA00TM.html?iref=_business_business_list_n",
+      "description": "戦後の復興期から人々の暮らしを照らしてきた蛍光灯が、その長い歴史を終えようとしている。 10月中旬、大阪府立八尾北高校（大阪府八尾市）では、校内約1300基の照明を蛍光灯からLEDへ切り替える工事の…",
+      "published": "2026-11-08T07:30:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "【そもそも解説】蛍光灯はなぜ製造禁止に？ いつまで使っていいの？",
+      "url": "https://www.asahi.com/articles/ASVC4216ZVC4PLFA003M.html?iref=_business_business_list_n",
+      "description": "家庭やオフィスで身近な蛍光灯が、まもなくつくられなくなる。一般照明用の蛍光灯は2027年末までに製造と輸出入が段階的に禁止され、LEDへの切り替えが一段と進む見通しだ。暮らしにはどんな影響があるのか…",
+      "published": "2026-11-08T07:30:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "蛍光灯が照らした戦後の「一室一灯」生活 パナ最後の工場も終幕迫る",
+      "url": "https://www.asahi.com/articles/ASVC40TXLVC4PLFA002M.html?iref=_business_business_list_n",
+      "description": "戦後の人々の暮らしを照らしてきた蛍光灯に、終幕が近づいている。水銀を含むことから、2027年末までに製造や輸出入が国際的に禁止されるためで、LEDへの切り替えが急速に進む。生産を続ける国内メーカーも…",
+      "published": "2026-11-08T07:30:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "自宅の蛍光灯はどうすれば？ 迫る製造禁止、ランプ交換で発火事故も",
+      "url": "https://www.asahi.com/articles/ASVC41FZ4VC4PLFA00BM.html?iref=_business_business_list_n",
+      "description": "一般照明用の蛍光灯は、2027年末までに製造と輸出入が段階的に禁止される。家庭にある蛍光灯はその後も使えるが、いずれ交換の時期はやってくる。どう備えればいいのか。家庭での確認方法やLEDに切り替える…",
+      "published": "2026-11-08T07:30:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "都心の2億円マンション「後妻に相続させる」遺言に実子が「待った」",
+      "url": "https://www.asahi.com/articles/ASVBX10ZGVBXULLI00MM.html?iref=_business_business_list_n",
+      "description": "東京都心における地価やマンション価格の高騰は、遺産相続にも影を落としている。 2023年、東京都港区白金の高級マンションに住んでいた資産家の80代男性が亡くなった。住んでいた1室（面積約100平方メ…",
+      "published": "2026-11-08T07:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "中古品買い取り店、なぜ増えた？ 強引な取引や価格を巡りトラブルも",
+      "url": "https://www.asahi.com/articles/ASVC44QQTVC4ULFA015M.html?iref=_business_business_list_n",
+      "description": "「中古品買い取り店のチラシを多く目にして、店舗も増えたと感じる。リセールビジネスについて知りたい」。そんな声が愛知県の40代男性から届きました。主要駅や大通りのあちこちで見かける店舗。その増加の背景…",
+      "published": "2026-11-08T07:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "「トランプを懲らしめる」声上げたヒスパニック テキサスで見た怒り",
+      "url": "https://www.asahi.com/articles/ASVC77RSNVC7UHBI009M.html?iref=_international_international_list_n",
+      "description": "トランプ米大統領の共和党が歴史的な大敗を喫した米国の中間選挙では、ヒスパニック系（中南米系）の人々の票が勝敗を決定づける大きな要因となった。2024年の大統領選でトランプ氏の返り咲きを強く後押しした…",
+      "published": "2026-11-08T16:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "カルテの中で出会った中村哲医師 偶然背中追いかけ、気づけば会長に",
+      "url": "https://www.asahi.com/articles/ASVBZ3GHXVBZTIPE009M.html?iref=_international_international_list_n",
+      "description": "■【連載】中村哲さんの背中を追って（上） 「お久しぶりです。波が高い季節になりましたね」 10月上旬の昼下がり。福岡市西区の玄界島の診療所で、医師の原祐一さん（60）が女性患者に優しく語りかけた。 「…",
+      "published": "2026-11-08T15:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "半信半疑の水路、完成させた中村哲医師 背中追う会長が胸に刻む言葉",
+      "url": "https://www.asahi.com/articles/ASVBZ3JPGVBZTIPE017M.html?iref=_international_international_list_n",
+      "description": "■【連載】中村哲さんの背中を追って（下） 2025年11月にNGO「ペシャワール会」の会長になった原祐一さん（60）は、05年に他の会員たちとアフガニスタンに渡り、用水路建設現場を訪問した。 辺りは一…",
+      "published": "2026-11-08T15:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "50年前の銃撃描いた映画「暗殺者（たち）」 なぜ上映中止要求まで",
+      "url": "https://www.asahi.com/articles/ASVC53WDMVC5UHBI01MM.html?iref=_international_international_list_n",
+      "description": "半世紀前の事件を描いた映画をめぐり、国会議員が上映中止を求める――。韓国で今秋、朴正熙（パクチョンヒ）大統領の妻でファーストレディーの陸英修（ユクヨンス）氏が亡くなった1974年の銃撃事件をモチーフ…",
+      "published": "2026-11-08T12:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "「24時間小説」 朝吹真理子とエルベ・ル・テリエが語る文学の遊び",
+      "url": "https://www.asahi.com/articles/ASVB04FGWVB0UHMC009M.html?iref=_international_international_list_n",
+      "description": "日本の作家8人とフランスの作家8人が、同じ寝台列車に乗り込み、時間と空間を共有しながら、終着駅に着くまでの24時間で一つの小説を書き上げる――。そんなユニークな国際文学プロジェクトが10月下旬に日本…",
+      "published": "2026-11-08T10:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "トランプ政権の新報道官に総合格闘技トップ？「狂った左翼から守る」",
+      "url": "https://www.asahi.com/articles/ASVC77TTGVC7UHBI002M.html?iref=_international_international_list_n",
+      "description": "トランプ米大統領は7日、世界最大の総合格闘技の興行団体「UFC」のダナ・ホワイト最高経営責任者（CEO）に対し、大統領報道官への就任を打診したとSNSで明らかにした。トランプ氏とホワイト氏は長年の盟…",
+      "published": "2026-11-08T08:52:05+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "大手銀行破綻で混乱のパラグアイ ペニャ大統領を罷免、背任罪で起訴",
+      "url": "https://www.asahi.com/articles/ASVC77KCJVC7SFVU0RCM.html?iref=_international_international_list_n",
+      "description": "南米パラグアイの検察は7日、前日に大統領を罷免（ひめん）されたペニャ氏を背任などの罪で起訴した。政府との結びつきが強い大手銀行の経営破綻（はたん）を発端に、銀行の持ち株会社の株主でもあったペニャ氏の…",
+      "published": "2026-11-08T08:08:10+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "毎日",
       "category": "政治",
-      "title": "安全保障、夫婦漫才で政府広報 防衛力強化へ国民の理解拡大図る",
-      "url": "https://www.asahi.com/articles/ASVC71HZGVC7UTFK01SM.html?iref=_politics_politics_list_n",
-      "description": "政府が、安全保障について「夫婦漫才」の形で説明する特集ページをインターネット上で公開した。日本の外交・防衛政策の基本方針を示す「国家安全保障戦略」など安全保障関連3文書の年内改定を前に、防衛力の強化…",
-      "published": "2026-11-07T15:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "政治",
-      "title": "達増岩手知事、政治家30周年の政治資金パーティー、進退は明言せず",
-      "url": "https://www.asahi.com/articles/ASVC70Q0CVC7UJUB003M.html?iref=_politics_politics_list_n",
-      "description": "岩手県の達増拓也知事は6日夜、政治家30周年を記念する政治資金パーティー「いわて発展のつどい」を盛岡市内で開いた。 前衆院議員の小沢一郎氏や国会議員、県議ら約550人が出席。ゲストとして、花巻東高校…",
-      "published": "2026-11-07T12:30:09+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "政治",
-      "title": "人権外交議連が赤根氏を訪問 制裁下のICCに分担金前払いへ尽力",
-      "url": "https://www.asahi.com/articles/ASVC70HM1VC7UHBI026M.html?iref=_politics_politics_list_n",
-      "description": "「人権外交を超党派で考える議員連盟」に所属する日本の国会議員ら6人が6日、トランプ米政権の制裁下にある国際刑事裁判所（ICC、オランダ・ハーグ）を訪れ、赤根智子所長と面会した。 赤根氏は、日本がIC…",
-      "published": "2026-11-07T12:30:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "政治",
-      "title": "福岡市長選、立候補したのはどんな人？ 13人の人となりや政策紹介",
-      "url": "https://www.asahi.com/articles/ASVC63PGNVC6TIPE01PM.html?iref=_politics_politics_list_n",
-      "description": "15日投開票の福岡市長選には、過去最多の13人が立候補しました。候補者の経歴や人となり、政策への思いを紹介します。（届け出順）",
-      "published": "2026-11-07T12:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "政治",
-      "title": "「静かに進む国難」に高市首相はどう挑む 人口減少社会への処方箋は",
-      "url": "https://www.asahi.com/articles/ASVC64F7ZVC6ULFA021M.html?iref=_politics_politics_list_n",
-      "description": "人口減少を食い止めつつ、経済成長も実現するにはどうすればよいか――。歴代政権が有効な打開策を見つけられなかった難題に、高市早苗首相も直面している。高市政権は年内にまとめる「人口総合戦略」で解決に向け…",
-      "published": "2026-11-07T12:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "政治",
-      "title": "米国産ジャガイモ輸入反対の署名、18万筆に到達 「非常に危うい」",
-      "url": "https://www.asahi.com/articles/ASVC623WBVC6UTQP001M.html?iref=_politics_politics_list_n",
-      "description": "米国産生ジャガイモの輸入に反対するオンライン署名が広がり、6日時点で18万筆を超えた。高市早苗首相に対して、トランプ政権が求める生ジャガイモの輸入解禁に向けた手続きを止めるよう求めている。 署名サイ…",
-      "published": "2026-11-07T10:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "宿泊客は皿洗い、ゴミ出しはしなくていい Airbnbがルール変更",
-      "url": "https://www.asahi.com/articles/ASVC64GTNVC6UHBI00PM.html?iref=_business_business_list_n",
-      "description": "■Airbnb Says Guests Shouldn’t Have to Do the Dishes Anymore 米国発の民泊仲介大手Airbnb（エアビーアンドビー）は、宿のホストが宿泊客に求…",
-      "published": "2026-11-07T18:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "「産業界が大変なことに」高市首相の台湾有事発言、1年後も頭痛の種",
-      "url": "https://www.asahi.com/articles/ASVC52DM8VC5UTFK01VM.html?iref=_business_business_list_n",
-      "description": "高市早苗首相の台湾有事をめぐる国会答弁から7日で1年が経つ。それに端を発した日中関係の悪化による日本経済への影響は多岐にわたり、各社とも対応に頭を痛めている。 中国商務省は今年1月、イットリウムなど…",
-      "published": "2026-11-07T09:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "JAL幹部が語る国内線の価値「非航空事業へのタッチポイント」",
-      "url": "https://www.asahi.com/articles/ASVC5571JVC5UTIL03BM.html?iref=_business_business_list_n",
-      "description": "政府の支援がなければ「赤字状態」となっている国内線。航空大手の幹部はどのように見ているのか。日本航空（JAL）の川瀬雄大・国内路線事業部長は「ライバルと協業できる大きな転換点の時代だ」と語る。――1…",
-      "published": "2026-11-07T09:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "大東建託、日本語教育事業に参入 人材確保へインドネシアで来春開校",
-      "url": "https://www.asahi.com/articles/ASVC634V5VC6ULFA01MM.html?iref=_business_business_list_n",
-      "description": "賃貸住宅建設大手の大東建託が、インドネシアで日本語教育事業に参入する。人手不足が深刻な日本での建設や介護分野の働き手として卒業生を採用する狙いがある。来年春にも開校し、今後も順次増やす計画だ。 同社…",
-      "published": "2026-11-07T09:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "鉄道の費用対効果マニュアルを国交省が改訂、一体評価の運用を具体化",
-      "url": "https://www.asahi.com/articles/ASVC63TB6VC6ULFA02NM.html?iref=_business_business_list_n",
-      "description": "国土交通省は6日、鉄道プロジェクトの費用対効果（B/C）の算出について、既に開通している区間とこれから延伸する区間を合わせた「一体評価」での算出方法を、マニュアルに具体的に明記したことを明らかにした…",
-      "published": "2026-11-07T09:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "JTのロシア事業、非製造会社3社も現地管理下に 新たな大統領令で",
-      "url": "https://www.asahi.com/articles/ASVC67R8PVC6UHBI004M.html?iref=_business_business_list_n",
-      "description": "ロシアのプーチン大統領は6日、日本たばこ産業（JT）グループがロシアに置いている非製造部門の3社を、新たに一時管理対象とする大統領令に署名した。プーチン氏は5日に、たばこなどの製造を担うJTグループ…",
-      "published": "2026-11-07T08:24:08+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "経済",
-      "title": "日本製紙、製紙工場跡地にデータセンター建設へ 北海道釧路市で",
-      "url": "https://www.asahi.com/articles/ASVC53SF3VC5ULFA01FM.html?iref=_business_business_list_n",
-      "description": "日本製紙は、2021年に新聞用紙などの生産を終了した北海道釧路市の工場跡地を活用し、データセンター（DC）事業を始めると発表した。日本製紙がDCを手がけるのは初めて。DC運営のゲットワークスと、東京…",
-      "published": "2026-11-07T08:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "ポーランド南部クラクフで無差別銃撃事件 6人死亡、十数人負傷",
-      "url": "https://www.asahi.com/articles/ASVC75HBQVC7UHBI017M.html?iref=_international_international_list_n",
-      "description": "ポーランド南部クラクフ中心部にある中央広場で7日、銃撃事件が発生した。地元警察によると、女性4人、男性2人の計6人が死亡し、他に十数人が負傷した。容疑者は警察官に撃たれ、病院に搬送されたという。 在…",
-      "published": "2026-11-08T04:57:21+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "NZ総選挙、大接戦も与党わずかにリード 政権交代なら日本に影響も",
-      "url": "https://www.asahi.com/articles/ASVC73FDJVC7UHBI01LM.html?iref=_international_international_list_n",
-      "description": "ニュージーランド（NZ）の総選挙（一院制、基本定数120）が7日投開票され、中道右派の国民党を中心とする連立与党が過半数をわずかに上回った。一方、最大野党・労働党が僅差（きんさ）に迫り、ラクソン首相…",
-      "published": "2026-11-07T22:14:49+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "「私は投票した」のステッカー、追悼の場に集まる あなたを忘れない",
-      "url": "https://www.asahi.com/articles/ASVC736QSVC7UQIP00ZM.html?iref=_international_international_list_n",
-      "description": "一枚、また一枚。3日の中間選挙の投票を終えた人たちが、米ミネソタ州ミネアポリスの追悼の場に「I Voted（私は投票した）」のステッカーを貼っていった。移民当局の捜査官に射殺された市民2人を悼む場所…",
-      "published": "2026-11-07T20:30:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "【社説】ロシアがJT現地法人を一時管理下に 制裁への不当な対抗だ",
-      "url": "https://www.asahi.com/articles/ASVC62DR2VC6USPT00DM.html?iref=_international_international_list_n",
-      "description": "侵略を続けるロシアへの制裁に対抗し、日本企業の経営権を奪う。日本に対ロ政策の変更を迫る露骨な圧力を許してはならない。 プーチン大統領が、日本たばこ産業（JT）グループの現地法人4社を一時的にロシア企…",
-      "published": "2026-11-07T19:01:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "宿泊客は皿洗い、ゴミ出しはしなくていい Airbnbがルール変更",
-      "url": "https://www.asahi.com/articles/ASVC64GTNVC6UHBI00PM.html?iref=_international_international_list_n",
-      "description": "■Airbnb Says Guests Shouldn’t Have to Do the Dishes Anymore 米国発の民泊仲介大手Airbnb（エアビーアンドビー）は、宿のホストが宿泊客に求…",
-      "published": "2026-11-07T18:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "米・イラン間接協議 カタールが仲介案「2日目にホルムズ海峡開放」",
-      "url": "https://www.asahi.com/articles/ASVC72D06VC7UHBI00XM.html?iref=_international_international_list_n",
-      "description": "米国のトランプ大統領は6日、イランとの間接協議を仲介するカタールのタミム首長と電話で協議した。トランプ氏は米中間選挙後にイランを再攻撃する可能性に言及してきたが、外交による解決も探っている。イランの…",
-      "published": "2026-11-07T16:40:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "北朝鮮を望むスタバ、対岸に自走砲 1.4キロで隣り合う緊張と日常",
-      "url": "https://www.asahi.com/articles/ASVC67V9DVC6UHBI01BM.html?iref=_international_international_list_n",
-      "description": "ソウル中心部から車で約1時間半。韓国北西部・金浦（キムポ）市には、北朝鮮を眺めながらコーヒーを飲めることで知られるスターバックスがある。 川を挟んだ対岸までは、わずか約1.4キロ。 その北朝鮮側に1…",
-      "published": "2026-11-07T16:00:00+09:00",
-      "paid": "確認できず",
+      "title": "「高市さんは勘違いを…」 “サナエ・ドナルド”関係、実際は? - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261106/k00/00m/010/158000c",
+      "description": "初の大舞台にもかかわらず「サナエ」「ドナルド」と互いのファーストネームが飛び交った日米首脳会談からはや1年。 高市早苗首相（65）とドナルド・トランプ大統領（80）、両首脳の関係が、何とも気になる。",
+      "published": "2026-11-08T10:00:00+0900",
+      "paid": "有料",
       "date_source": "記事公開日時"
     },
     {
@@ -238,16 +248,6 @@
       "url": "https://mainichi.jp/articles/20261106/k00/00m/010/306000c",
       "description": "高市早苗首相の台湾有事を巡る国会答弁をきっかけに悪化した状態が続いている日中関係をどうみているのか。識者2人に聞いた。【聞き手・畠山嵩、野間口陽】 中国との関係改善、日本の国力拡大が鍵",
       "published": "2026-11-07T06:34:00+0900",
-      "paid": "有料",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "毎日",
-      "category": "政治",
-      "title": "「安倍ラインに」中国の改善シグナル 高市首相の「直し」で消失 - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261106/k00/00m/010/295000c",
-      "description": "「安倍ラインに戻してほしい」。10月5日に召集された臨時国会前、日本政府関係者は高市早苗首相の所信表明演説に関し、中国側からメッセージを受け取った。「安倍ライン」とは2014年9月、当時の安倍晋三首相が所信表明演説で日中関係回復への強い意欲を示した発言を指す。",
-      "published": "2026-11-07T06:30:00+0900",
       "paid": "有料",
       "date_source": "記事公開日時"
     },
@@ -354,6 +354,26 @@
     {
       "paper": "毎日",
       "category": "国際",
+      "title": "対欧州最前線での「記憶を巡る戦い」 緊迫するロシアの飛び地 - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261106/k00/00m/030/089000c",
+      "description": "ウクライナ情勢を巡りロシアと北大西洋条約機構（NATO）の対立が深まる中、バルト海に面した露最西端の飛び地・カリーニングラードは緊張の最前線となっている。現地ではかつてドイツ領だったこの地域をソ連軍が「解放」した歴史が強調され、「記憶を巡る戦い」においても最前線になっていた。【カリーニングラードで",
+      "published": "2026-11-08T11:00:00+0900",
+      "paid": "有料",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "毎日",
+      "category": "国際",
+      "title": "「高市さんは勘違いを…」 “サナエ・ドナルド”関係、実際は? - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261106/k00/00m/010/158000c",
+      "description": "初の大舞台にもかかわらず「サナエ」「ドナルド」と互いのファーストネームが飛び交った日米首脳会談からはや1年。 高市早苗首相（65）とドナルド・トランプ大統領（80）、両首脳の関係が、何とも気になる。",
+      "published": "2026-11-08T10:00:00+0900",
+      "paid": "有料",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "毎日",
+      "category": "国際",
       "title": "半島の現場から：「惨禍伝える力に」 ソウル近郊の「本土決戦」痕跡が果たす役割 - 毎日新聞",
       "url": "https://mainichi.jp/articles/20261106/k00/00m/030/049000c",
       "description": "旧日本軍は戦前、植民地とした朝鮮半島の各地に軍事拠点を構築した。ソウル郊外のある場所には、「本土決戦」に備えた痕跡が今も残る。韓国では近年、こうした「戦争遺跡」を発掘・保存する取り組みが活発化している。",
@@ -374,200 +394,180 @@
     {
       "paper": "毎日",
       "category": "国際",
-      "title": "米中間選挙2026,トランプ政権：「トランプ氏の頭脳」最側近に 中間選大敗も民主と対決色鮮明に - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261107/k00/00m/030/037000c",
-      "description": "トランプ米大統領は6日、スージー・ワイルズ大統領首席補佐官が退任し、後任にスティーブン・ミラー大統領次席補佐官（41）が昇格すると発表した。3日の中間選挙での与党・共和党の大敗を受けて、ホワイトハウスの体制刷新を図る。",
-      "published": "2026-11-07T12:00:00+0900",
-      "paid": "有料",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "毎日",
-      "category": "国際",
-      "title": "米中間選挙2026：中間選挙で奏功した民主党戦略「三つのC」 内部対立の火種抱え - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261106/k00/00m/030/230000c",
-      "description": "「火曜日（3日）はとても素晴らしい夜でしたね！」。5日、米首都ワシントンであった民主党支持者らによる中間選挙を振り返るイベントで同党系シンクタンク所長は声を弾ませた。",
-      "published": "2026-11-07T07:00:00+0900",
-      "paid": "有料",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "毎日",
-      "category": "国際",
-      "title": "NZ総選挙、与党が暫定集計はやや優勢 新興政党も議席獲得へ - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261107/k00/00m/030/247000c",
-      "description": "ニュージーランド（NZ）国会（1院制、基本定数120）の総選挙が7日、投開票された。選挙管理委員会の暫定集計の結果、連立政権を組む与党3党が僅差で優勢で、過半数もうかがう勢いだが、与野党の議席は伯仲している。",
-      "published": "2026-11-07T22:50:23+0900",
+      "title": "罷免されたパラグアイ前大統領を訴追 大手銀行破綻で背任疑い - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261108/kyd/00m/030/011000c",
+      "description": "南米パラグアイの検察は7日、大統領の地位を利用して破綻した大手デジタル銀行「ウエノバンク」に公的機関の資金を預けさせ損害を与えたとして、背任などの疑いでペニャ前大統領を訴追した。国会が6日に罷免したばかり。前大統領側は否認している。",
+      "published": "2026-11-08T13:11:56+0900",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "毎日",
       "category": "国際",
-      "title": "中国で拘束のアステラス社員 12月中旬に満期服役で出所へ - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261107/kyd/00m/030/016000c",
-      "description": "中国で「スパイ活動を行った」として実刑判決を受け、服役中のアステラス製薬の60代の日本人男性社員が12月中旬に懲役刑の満期となり、出所する見通しであることが7日分かった。男性は出所後、直ちに日本に強制送還されるとみられている。日中関係筋が明らかにした。日本政府は男性の早期釈放を求めてきたが、中国側",
-      "published": "2026-11-07T20:49:52+0900",
-      "paid": "有料",
+      "title": "「ピザにパイナップル」は侮辱？豪で拒んだイタリア人シェフ解雇 - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261107/k00/00m/030/174000c",
+      "description": "ピザにパイナップルをトッピングするのはありか、なしか――。 オーストラリア東部ブリスベンのイタリアンレストランで、ピザにパイナップルを乗せることを拒否したイタリア人男性シェフが解雇され、長年続く論争に再び注目が集まっている。",
+      "published": "2026-11-08T11:30:00+0900",
+      "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "毎日",
       "category": "国際",
-      "title": "NZ総選挙、開票進む 与野党の議席伯仲 最終結果まだ見通せず - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261107/k00/00m/030/208000c",
-      "description": "ニュージーランド（NZ）国会（1院制、基本定数120）の総選挙が7日、投開票された。連立政権を組む与党3党が過半数をうかがう勢いだが、与野党の議席は伯仲しており、最終結果は見通せない状況だ。",
-      "published": "2026-11-07T20:47:35+0900",
+      "title": "対イラン海上封鎖 米軍が民間船をオマーン湾で攻撃、航行不能に - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261108/k00/00m/030/026000c",
+      "description": "米中央軍は7日、対イランの海上封鎖を突破しようとしたとして、セントクリストファー・ネビス船籍の商業船1隻をオマーン湾で攻撃したと発表した。イランの港を出港後、米側の警告を無視したため、船尾に精密誘導弾を発射して航行不能にしたという。",
+      "published": "2026-11-08T09:13:44+0900",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "小池都知事が欧州歴訪から帰国、チャンピオン・メイヤーズ巡り「来年５月に東京で総会」（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/9a2bb43236bc83fe962a64fd7fe1d1bb107418a9",
-      "description": "東京都の小池百合子知事は７日夜、欧州３か国への出張から帰国した。羽田空港で報道各社の取材に応じた小池氏は、自身が議長を務める経済協力開発機構（ＯＥＣＤ）の首長連携組織「チャンピオン・メイヤーズ」を巡",
-      "published": "2026-11-07T21:00:56+09:00",
+      "title": "消費税減税法案審議巡り中西官房副長官「参院は非常に厳しい環境にある」「より深い議論を展開できるよう、政府としても準備したい」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/50fbac73e2df2829107dc01514457e8033c52ddd",
+      "description": "中西祐介官房副長官は８日、少数与党の参院で１１日から審議入りする消費税減税・支援金法案に関し、「参院は非常に厳しい環境にある。より深い議論を展開できるよう、政府としても準備したい」と語った。訪問先の",
+      "published": "2026-11-08T15:46:10+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "高市首相が原子力総合防災訓練に参加、対策本部会議で防災庁との連携対応を指示（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/4e3258e152a6d11d0f9050fb35eddec744cfdd52",
-      "description": "高市首相は７日、政府の原子力総合防災訓練に参加した。最大震度７の地震が発生し、北海道電力泊（とまり）原子力発電所（北海道）で原子炉の冷却ができなくなったとの想定で行われた。",
-      "published": "2026-11-07T19:58:34+09:00",
+      "title": "自動車税見直し 愛知県内の経済界、労働界が大村知事に申し入れ（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/55668e4a05caab243096a27a52504ce10cb8e854",
+      "description": "愛知県内の経済界、労働界は6日、大村秀章知事に対し、自動車重量税の廃止や自動車関係諸税の公平・中立、簡素化などを国に働きかけるよう申し入れた。 訪れたのは名古屋商工会議所、中部経済連合会、県自動車販",
+      "published": "2026-11-08T14:38:00+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "兵庫維新の会「８０人超」統一選で擁立目指す、新代表就任の井上英孝・衆院議員（大阪１区）が明らかに…「大阪に次ぐ組織力の兵庫でしっかりとした体制を整えていく」（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/5bcbbccf390f4524074596291b9461e3d7b25134",
-      "description": "兵庫維新の会の新代表に就任した、日本維新の会で選挙対策委員長を務める井上英孝・衆院議員（大阪１区）が６日、神戸市内で記者会見し、来春の統一地方選に向けた擁立方針を明らかにした。▶維新の全国政党化は足",
-      "published": "2026-11-07T16:01:20+09:00",
+      "title": "米空母艦載機部隊に伴う交付金、和木町の議連が継続求める要望案…「言葉尻きつい」協議会で修正求める意見（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/db6675fa010b3605961eecd116b0ce9151b6e4b4",
+      "description": "山口県と米軍岩国基地周辺４市町の基地問題議員連盟の連絡協議会総会が７日、岩国市で開かれた。米空母艦載機部隊の受け入れに伴う国の交付金が打ち切られる見通しになっている和木町の議連が、継続を求める要望案",
+      "published": "2026-11-08T14:07:05+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "小豆島町長を書類送検、衆院選投開票日に特定候補者への投票を依頼…取材に「二度としない」（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/2f7e91d9b21e51219d45a5d90081219b3713f764",
-      "description": "香川県警は６日、２月の衆院選投開票日にＳＮＳで知人の有権者に特定の候補者への投票を依頼したとして、香川県小豆島町の大江正彦町長（６６）を公職選挙法違反の疑いで地検に書類送検した。６月に町民が小豆署に",
-      "published": "2026-11-07T15:26:26+09:00",
+      "title": "熊本市長選挙、週末でにぎわうイベントや中心部などで支持訴え…家族連れらと握手・アーケード街を練り歩き（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/0ce8e3aaafd5ac003aaf85d28c5cb1fa3ae5463a",
+      "description": "現職と新人４人の計５人が舌戦を繰り広げている熊本市長選（１５日投開票）は７日、告示から折り返しとなった。快晴の下、候補者たちは支持拡大を目指して週末でにぎわう市内各地へ繰り出して公約を訴えるなどした",
+      "published": "2026-11-08T12:34:45+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "鹿児島県垂水市長選挙、新人で元市職員の迫田和文氏が立候補表明…企画政策課秘書広報係長など務める（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/73a99047dc8bd0b8df154e9462d017693fb5d794",
-      "description": "来年１月１０日告示、同１７日投開票の鹿児島県垂水市長選に、新人で元市職員の迫田和文氏（４６）が６日、無所属で立候補する意向を表明した。【写真】「一票じゃ変わんない、って…？ふ～ん、そういうこと言うん",
-      "published": "2026-11-07T15:00:37+09:00",
+      "title": "乱戦の福岡市長選挙「イメージカラー」、半数近くが青系で苦労…候補の一人「告示後の掲示板を見て驚いた」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/348f77949b1e68640295de43c858d9de7f8649c4",
+      "description": "選挙では、有権者に印象づけようとイメージカラーを打ち出す陣営も多い。１５日投開票の福岡市長選でも、立候補者はそれぞれの色を掲げながら論戦を繰り広げている。ただ、１３人が立候補する乱戦ならではの苦労も",
+      "published": "2026-11-08T11:48:21+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "トップ当選の市議レスラー「議場で覆面」認められる…議長らの「素顔」確認でなりすまし防止（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/33ae0f3de23e6f2f8c6e00f140c069d9fcfb5492",
-      "description": "１０月の兵庫県川西市議選で初当選したプロレスラーのビリーケン・キッド氏（５２）の議場での覆面着用について、市議会の会派代表者会は６日、認めることを決めた。９日に開会する選挙後初の本会議には、本人の希",
-      "published": "2026-11-07T13:10:22+09:00",
+      "title": "乱戦模様の福岡市長選挙「自己判断の対応」、党派を超え応援する市議も…政策に共感・同窓生・市議選見据え（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/1d2185c0c99e31c71d8f2c532688efa9c4a0b5eb",
+      "description": "１３人の出馬で乱戦模様の福岡市長選（１５日投開票）は、候補の支援を見送る政党が続出した。対応が自己判断となった市議たちは、それぞれの考えで選挙戦に臨んでいる。【福岡市長選挙】候補者１３人の横顔を一挙",
+      "published": "2026-11-08T10:13:19+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "title": "佐賀県知事選挙、国民民主党県連は自主投票に…立候補予定者から正式な推薦要請なし（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/7d32ae3a851a2f298aab4d4f6217fb8c4ad6b8c7",
-      "description": "任期満了に伴う佐賀県知事選（１２月３日告示、同２０日投開票）について、国民民主党県連は自主投票とすることを決めた。県連の草場健次幹事長によると、いずれの立候補予定者からも正式な推薦要請がなかったこと",
-      "published": "2026-11-07T12:27:59+09:00",
+      "title": "福岡市長選挙、週末は人出の多い場所でアピール…早朝から天神の駅・地域の祭りで握手・交差点で渋滞対策（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/92507d0cecad63d81756bbd4f0ddd05a56d74c5a",
+      "description": "福岡市長選（１５日投開票）は７日、告示後初の週末となった。過去最多の新人１３人で争われる選挙戦を制そうと、候補たちは駅やイベント会場周辺など人出の多い場所に繰り出し、有権者にアピールした。【福岡市長",
+      "published": "2026-11-08T10:12:51+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "経済",
-      "title": "中国の大学で冷める「日本語」学習熱…日系企業の撤退・縮小で需要減、日中関係「冷え込み」も影響か（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/2429e549b2555955875c71b82c96c1662b70158f",
-      "description": "中国の大学など高等教育機関で日本語を学ぶ学生が減少している。日本企業の撤退や縮小に伴い、日本語人材の需要が減ったことなどが要因だ。昨年１１月の高市首相の台湾有事を巡る国会答弁以降、日中関係が冷え込ん",
-      "published": "2026-11-07T16:09:47+09:00",
+      "title": "アジア開発銀行の年次総会控えシンポ 名古屋市立大で…「地域企業の宣伝を」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/db48000481221ee0c08a66b428962f9f04c3209a",
+      "description": "来年5月に名古屋市で開かれるアジア開発銀行（ADB）の年次総会を約半年後に控え、開催の意義を考えるシンポジウムが6日、名古屋市立大桜山キャンパス（名古屋市瑞穂区）で開かれ、市民や学生ら約120人が参",
+      "published": "2026-11-08T14:55:05+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "経済",
-      "title": "システムの脆弱性「無数にあるため人による管理は難しい」…中小企業経営者へ講座、全権アカウントの保護を説明（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/0e4a1c6f483f2a87339680d8a7f7b85115c17e9b",
-      "description": "全国的に企業へのサイバー攻撃が相次ぐ中、中小企業の経営者を対象にした情報セキュリティー講座が６日、山口市内で行われた。専門家や県警の担当者らが講師を務め、システムの全権を持つアカウントを保護すること",
-      "published": "2026-11-07T15:51:56+09:00",
+      "title": "トヨタ中国市場でEV攻勢 HV中心の戦略転換へ（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/8cdd398bf070b6ca84b6d806c4ed430fd1e35b9b",
+      "description": "トヨタ自動車は、5日に発表した2026年9月中間連結決算の記者会見で、競争が激しい中国市場で反転攻勢に出る考えを示した。得意のハイブリッド車（HV）で販売を伸ばす戦略を切り替え、中国で需要が高まる電",
+      "published": "2026-11-08T14:51:45+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "経済",
-      "title": "防長交通がバス運賃を２０～９０円値上げへ…来年２月２２日から県内１８５系統対象、初乗り１９０円に統一（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/edc2b1dc3859d501bfa9dcd9b6fa4338ddc2135c",
-      "description": "防長交通（本社・山口県周南市）は、来年２月２２日から、乗り合いバスの運賃を２０～９０円値上げする予定と発表した。人件費の上昇などが理由で、正式に決まれば値上げは２０１０年７月以来となる。【動画】温泉",
-      "published": "2026-11-07T15:42:11+09:00",
+      "title": "中電社長「大変深く反省」 業務改善命令 企業統治再構築急ぐ（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/e940b6ff014c5694fd4274640b3bae1026ba8a9b",
+      "description": "浜岡原子力発電所（静岡県御前崎市）の再稼働審査を巡る不正問題で、中部電力は6日、経済産業省から業務改善命令を受けた。中電は、不正防止の具体的な改善計画を11月末までに同省に提出する必要があり、企業統",
+      "published": "2026-11-08T14:49:37+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "経済",
-      "title": "テスラが「サイバートラック」生産縮小へ、リコール相次ぎ販売伸び悩み…「無人運転タクシー」車両を増産（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/460171b426f5e1aa58b6ec7953661860687f36c6",
-      "description": "【ニューヨーク＝木瀬武】米電気自動車（ＥＶ）大手テスラのイーロン・マスク最高経営責任者（ＣＥＯ）は６日、ピックアップトラック型ＥＶ「サイバートラック」の生産を２０２７年半ば頃に縮小すると表明した。ス",
-      "published": "2026-11-07T15:22:10+09:00",
-      "paid": "確認できず",
-      "date_source": "Yahoo配信日時"
-    },
-    {
-      "paper": "読売",
-      "category": "経済",
-      "title": "国産ブドウ「中間層拡大」のベトナムに輸出、首脳会談で果物の相互解禁合意へ…「かんきつ類の王様」輸入も（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/8bcdf0656881b06ab16297a7f332e63483071a79",
-      "description": "日本とベトナムの両政府が、ベトナム産かんきつ類「ポメロ」と日本産ブドウの輸入の相互解禁で合意することがわかった。複数の日本政府関係者が明らかにした。９日に東京都内で開かれる首脳会談で合意を確認し、共",
-      "published": "2026-11-07T15:00:33+09:00",
-      "paid": "確認できず",
-      "date_source": "Yahoo配信日時"
-    },
-    {
-      "paper": "読売",
-      "category": "経済",
-      "title": "愛媛銀行、カードローンなど顧客情報が漏えい…勤務先や保証額（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/af2750824a128da693d9b418385f5451d39693f8",
-      "description": "愛媛銀行は５日、カードローンなどの保証業務で提携する消費者金融大手・ＳＭＢＣコンシューマーファイナンスが不正アクセスを受け、顧客の個人情報が漏えいしたと発表した。件数などは調査中とした。▶顧客の「年",
-      "published": "2026-11-07T12:00:28+09:00",
-      "paid": "確認できず",
-      "date_source": "Yahoo配信日時"
-    },
-    {
-      "paper": "読売",
-      "category": "経済",
-      "title": "西鉄の９月中間連結決算、３年連続の増収…半導体関連製品の取扱高が増加した国際物流事業が好調（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/7cef782a6c086b7b6688707536daf373e8f33209",
-      "description": "西日本鉄道が６日発表した２０２６年９月中間連結決算は、売上高にあたる営業収益が前年同期比９・２％増の２４３９億円で、中間期として３年連続の増収だった。半導体関連製品などの取扱高が増加した国際物流事業",
-      "published": "2026-11-07T11:38:51+09:00",
+      "title": "名鉄バス、来月値上げへ 3年ぶり…東海3県で、平均10％程度（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/31b84370290551a23798102e83cec68d27ac7479",
+      "description": "名鉄バス（名古屋市）は6日、中部運輸局から路線バス運賃の値上げの認可を受けたと発表した。12月1日から、愛知、岐阜、三重の3県で運行する路線バスの運賃を平均10％程度引き上げる。値上げは2023年1",
+      "published": "2026-11-08T14:44:29+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
       "category": "国際",
-      "title": "トランプ氏最側近、保守強硬派ミラー氏起用へ…これまでに不法移民追放など攻撃的な政策実行（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/0f5a66daa89aca2fe3d9538bb479cf21a91d8187",
-      "description": "【ワシントン＝栗山紘尚】米国のトランプ大統領は６日、スーザン・ワイルズ大統領首席補佐官が交代し、後任にスティーブン・ミラー次席補佐官を起用すると発表した。ミラー氏は不法移民対策を指揮した保守強硬派と",
-      "published": "2026-11-07T22:43:03+09:00",
+      "title": "ＪＴロシア現地法人、新たに３社が「一時管理」に追加され計７社に…露外務省「露骨な敵対行為への対抗措置」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/64ba99b21a8e498c34a92a058408400519b78d28",
+      "description": "ロシアのプーチン大統領は６日、日本たばこ産業（ＪＴ）のロシア現地法人３社を新たにロシア企業による一時管理下に置く大統領令に署名した。５日の大統領令ではＪＴの現地法人のうち製造会社４社が一時管理の対象",
+      "published": "2026-11-08T17:12:31+09:00",
+      "paid": "確認できず",
+      "date_source": "Yahoo配信日時"
+    },
+    {
+      "paper": "読売",
+      "category": "国際",
+      "title": "トランプ氏さえ「やり過ぎ」と漏らした忠臣ミラー氏、要の首席補佐官に…「我々は権力で支配される現実世界に生きている」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/1622256e2950dc685ac0db042f8619562a568070",
+      "description": "【ワシントン＝阿部真司】次期大統領首席補佐官に指名されたスティーブン・ミラー次席補佐官は、第１次政権から仕えるトランプ大統領の忠臣だ。第２次政権では内政、外交の主要政策を先導してきた。トランプ氏は保",
+      "published": "2026-11-08T11:00:35+09:00",
+      "paid": "確認できず",
+      "date_source": "Yahoo配信日時"
+    },
+    {
+      "paper": "読売",
+      "category": "国際",
+      "title": "総合格闘技団体トップに大統領報道官を打診…トランプ氏「暴力的なファイターであり、戦士である」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/b2effab2c909687082e6c91dc069a986a35da03b",
+      "description": "【ワシントン＝橋本潤也】トランプ米大統領は７日、空席となっていた大統領報道官のポストに総合格闘技団体ＵＦＣのダナ・ホワイト最高経営責任者（ＣＥＯ）を起用する考えをＳＮＳで明らかにした。米ＣＮＮは関係",
+      "published": "2026-11-08T10:41:08+09:00",
+      "paid": "確認できず",
+      "date_source": "Yahoo配信日時"
+    },
+    {
+      "paper": "読売",
+      "category": "国際",
+      "title": "トランプ政権、ＣＯＰ３１に公式代表団派遣せず…２年連続不参加「米国の利益を最優先とする」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/8879d7578f3e77f8b7f54367d8dd60bcbc23dfa4",
+      "description": "【ワシントン＝中根圭一】米国務省の報道官は７日、トルコ南部アンタルヤで９日に開幕する国連気候変動枠組み条約第３１回締約国会議（ＣＯＰ３１）に、トランプ政権が米政府の公式代表団を派遣しないことを明らか",
+      "published": "2026-11-08T07:26:05+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     }
@@ -576,37 +576,67 @@
     {
       "paper": "読売",
       "category": "政治",
-      "url": "https://news.yahoo.co.jp/articles/6e760903d8c0aa08679f231485307bcac9a6fba0",
+      "url": "https://news.yahoo.co.jp/articles/52707257009524e4f4fbe441dea17cdf28db8049",
+      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
+    },
+    {
+      "paper": "読売",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/d46257b0118fc63e92594f39ab15ce93d74a7811",
+      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
+    },
+    {
+      "paper": "読売",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/265e87d06c12f1e23048b1eca563d59267c17a58",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "url": "https://news.yahoo.co.jp/articles/4450594000dd4c63c4e3714f12af8d57aa83ab4a",
+      "url": "https://news.yahoo.co.jp/articles/52707257009524e4f4fbe441dea17cdf28db8049",
+      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
+    },
+    {
+      "paper": "読売",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/d46257b0118fc63e92594f39ab15ce93d74a7811",
+      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
+    },
+    {
+      "paper": "読売",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/265e87d06c12f1e23048b1eca563d59267c17a58",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
       "category": "政治",
-      "url": "https://news.yahoo.co.jp/articles/6e760903d8c0aa08679f231485307bcac9a6fba0",
+      "url": "https://news.yahoo.co.jp/articles/52707257009524e4f4fbe441dea17cdf28db8049",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
-      "category": "政治",
-      "url": "https://news.yahoo.co.jp/articles/4450594000dd4c63c4e3714f12af8d57aa83ab4a",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/d46257b0118fc63e92594f39ab15ce93d74a7811",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
-      "category": "政治",
-      "url": "https://news.yahoo.co.jp/articles/6e760903d8c0aa08679f231485307bcac9a6fba0",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/265e87d06c12f1e23048b1eca563d59267c17a58",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
-      "category": "政治",
-      "url": "https://news.yahoo.co.jp/articles/4450594000dd4c63c4e3714f12af8d57aa83ab4a",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/d46257b0118fc63e92594f39ab15ce93d74a7811",
+      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
+    },
+    {
+      "paper": "読売",
+      "category": "経済",
+      "url": "https://news.yahoo.co.jp/articles/265e87d06c12f1e23048b1eca563d59267c17a58",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     }
   ],
@@ -618,30 +648,30 @@
     "毎日|経済": 7,
     "毎日|国際": 7,
     "読売|政治": 7,
-    "読売|経済": 7,
-    "読売|国際": 1
+    "読売|経済": 4,
+    "読売|国際": 4
   },
   "diagnostics": {
     "yomiuri": {
       "pages": 4,
-      "listed": 136,
+      "listed": 140,
       "classified": {
-        "政治": 17,
-        "経済": 7,
-        "国際": 1
+        "政治": 12,
+        "経済": 12,
+        "国際": 4
       },
-      "unclassified": 111,
+      "unclassified": 112,
       "unclassified_examples": [
-        "ｉＰＳ細胞活用したがん治験、来年開始…治療薬となれば活用一気に広がる可能性 11/8(日) 5:00",
-        "「首斬り」総領事の追放、中国側「倍返し」予告で見送り…互いに譲らず冷え切った日中関係 11/8(日) 5:00",
-        "静岡西部を震源とする地震、愛知県知多市で震度５強観測…津波の心配なし 11/8(日) 1:24",
-        "西武池袋線が運転再開…江古田駅で人身事故 11/8(日) 0:31",
-        "「ポテンシャル無限大」の１９歳藤井健翔、ジャッジに姿重ねた松井監督「そういう選手に」と期待 11/7(土) 23:48",
-        "２０代女性監禁容疑の男「殺害して遺棄した」と供述、山林で遺体発見…女性は７月に警察に相談 11/7(土) 23:11"
+        "男子ゴルフ池田勇太、３人のプレーオフ制し７年ぶりツアー優勝…通算２２勝目・ＡＣＮチャンピオンシップ 11/8(日) 16:58",
+        "秋篠宮ご夫妻、全国育樹祭の式典に出席…緑化活動の功労者に「深く敬意を表します」 11/8(日) 16:50",
+        "浦和レッズのＧＫ西川周作、Ｊ１リーグ戦最多出場記録を６７３試合に更新…遠藤保仁の記録抜き単独トップに 11/8(日) 16:02",
+        "大阪マーヴェラス、尼崎で逆転勝ち１８８０人観戦…ファンらタオル手に応援「ＳＶリーグ女子」 11/8(日) 15:49",
+        "アナキズムや現代思想を研究する長崎大学准教授、ゼミ指導の楽しさは…学生が「当たり前」に疑問を持ってくれる 11/8(日) 15:42",
+        "「秋吉台エコ・ミュージアム」展示など一部を新しく…草原写真を使った壁面ボードやカルスト地形の空撮映像 11/8(日) 15:28"
       ],
       "article_failures": {
-        "政治": 6,
-        "経済": 0,
+        "政治": 3,
+        "経済": 8,
         "国際": 0
       }
     }
