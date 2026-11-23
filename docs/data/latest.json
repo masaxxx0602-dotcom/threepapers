@@ -1,6 +1,36 @@
 {
-  "fetched_at": "2026-11-23T00:44+09:00",
+  "fetched_at": "2026-11-23T09:30+09:00",
   "articles": [
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "ハッシー文書とは 憲法公布80年、前文起案者が託した平和への構想",
+      "url": "https://www.asahi.com/articles/ASVCM43CYVCMUTFK001M.html?iref=_politics_politics_list_n",
+      "description": "80年前に公布された日本国憲法の前文は、どのように書かれたのか。敗戦後の日本を占領したGHQ（連合国軍最高司令官総司令部）で起案を担った米海軍士官、アルフレッド・ロドマン・ハッシー・ジュニア（190…",
+      "published": "2026-11-23T09:01:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "占領下の新憲法制定、国際法上の問題は 黒﨑将広・東北大教授に聞く",
+      "url": "https://www.asahi.com/articles/ASVCC4D7KVCCUTFK001M.html?iref=_politics_politics_list_n",
+      "description": "■ハッシー文書を読み解く(16) 連合国軍総司令部（GHQ）の占領下で制定された日本国憲法。この制定過程は、国際法に照らして問題がなかったのか。占領国が守るべきルールを定めたハーグ陸戦条約との関係が、…",
+      "published": "2026-11-23T09:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "政治",
+      "title": "防衛産業の強化は「追い風」か、それとも… 軍需工場の記憶と教訓",
+      "url": "https://www.asahi.com/articles/ASVCM41RPVCMPTIL01FM.html?iref=_politics_politics_list_n",
+      "description": "高市政権が防衛産業の強化に乗り出している。殺傷能力のある武器の輸出解禁に踏み切り、防衛産業の拠点を広島県呉市に造ろうとしている。業界は「追い風」にわくが、かつての軍需産業にゆかりがある人たちは、どう…",
+      "published": "2026-11-23T07:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
     {
       "paper": "朝日",
       "category": "政治",
@@ -43,31 +73,41 @@
     },
     {
       "paper": "朝日",
-      "category": "政治",
-      "title": "支部解散と離党進む中道 結党主導の安住淳氏が地元会合で語った苦境",
-      "url": "https://www.asahi.com/articles/ASVCN3SFMVCNUNHB00YM.html?iref=_politics_politics_list_n",
-      "description": "2月の衆院選で大敗し、その後に事実上の解党となった中道改革連合で、各地の支部の解散や落選した候補者の離党手続きが進んでいる。結党を主導し共同幹事長だった安住淳氏（64）も、地盤とする宮城4区総支部を…",
-      "published": "2026-11-22T09:00:00+09:00",
+      "category": "経済",
+      "title": "ポッキーはなぜ世界で売れた？誕生60年、現地化で「ドリアン味」も",
+      "url": "https://www.asahi.com/articles/ASVCJ2RR5VCJPLFA00DM.html?iref=_business_business_list_n",
+      "description": "世代を超えた定番のチョコレート菓子、江崎グリコの「ポッキー」が誕生から60年を迎えた。海外進出の歴史も長く、世界約30の国・地域で販売。味の種類は限定品も含めると全世界で70種類以上にのぼる。 ポッ…",
+      "published": "2026-11-23T07:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "朝日",
-      "category": "政治",
-      "title": "バッジ失い、蓄え切り崩す 落選した立憲出身の中道元議員の10カ月",
-      "url": "https://www.asahi.com/articles/ASVCN4JCTVCNUNHB00KM.html?iref=_politics_politics_list_n",
-      "description": "2月の衆院選で惨敗を喫した中道改革連合。中道から選挙に挑み、落選した候補者の現在地はさまざまだ。 仙台市議から国政に転じて宮城1区で当選3回を重ねた岡本章子・前衆院議員（62）は、事務所のスタッフを…",
-      "published": "2026-11-22T09:00:00+09:00",
+      "category": "経済",
+      "title": "防衛産業の強化は「追い風」か、それとも… 軍需工場の記憶と教訓",
+      "url": "https://www.asahi.com/articles/ASVCM41RPVCMPTIL01FM.html?iref=_business_business_list_n",
+      "description": "高市政権が防衛産業の強化に乗り出している。殺傷能力のある武器の輸出解禁に踏み切り、防衛産業の拠点を広島県呉市に造ろうとしている。業界は「追い風」にわくが、かつての軍需産業にゆかりがある人たちは、どう…",
+      "published": "2026-11-23T07:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "朝日",
-      "category": "政治",
-      "title": "【社説】安保の政府広報に「陰謀論者」起用の倒錯 今からでも見直せ",
-      "url": "https://www.asahi.com/articles/ASVCN42ZCVCNUSPT00VM.html?iref=_politics_politics_list_n",
-      "description": "社会の出来事を、明確な根拠なしに特定の集団や権力者による秘密の企てと結びつけて語る。そんな「陰謀論」の発信者を、政府広報の担い手に起用する倒錯ぶりに驚くばかりだ。高市政権が事実に謙虚に向き合う姿勢を…",
-      "published": "2026-11-21T19:00:00+09:00",
+      "category": "経済",
+      "title": "昆布高騰…佃煮メーカー「苦肉の新作」コリコリ食感、予想外のヒット",
+      "url": "https://www.asahi.com/articles/ASVCM2FBNVCMDIFI00TM.html?iref=_business_business_list_n",
+      "description": "食卓に欠かせない昆布の値段が高騰しています。原料の高騰に伴い、昆布の佃煮（つくだに）の値段も上がっています。原料高に直面した佃煮メーカーが昆布の代わりに「ある食材」を佃煮にしたところ、出荷量が右肩上が…",
+      "published": "2026-11-23T06:50:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "経済",
+      "title": "経団連がなぜ選択的夫婦別姓を求めるのか 背景にある企業の危機感",
+      "url": "https://www.asahi.com/articles/ASVCP1C4QVCPULLI00PM.html?iref=_business_business_list_n",
+      "description": "高市早苗政権が検討している「旧姓使用の法制化」。しかし、自民党に強い影響力を持つとされる経団連は2024年6月、「女性活躍が進めば進むほど（旧姓の）通称使用による弊害が顕在化するようになった」として…",
+      "published": "2026-11-23T06:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
@@ -103,41 +143,51 @@
     },
     {
       "paper": "朝日",
-      "category": "経済",
-      "title": "「親の判断力」が相続の争点に 家族信託「無効」の大どんでん返しも",
-      "url": "https://www.asahi.com/articles/ASVC515KRVC5ULLI00FM.html?iref=_business_business_list_n",
-      "description": "認知症で遺産相続がこじれるトラブルが後を絶たない。母親からの相続をめぐり、きょうだいが法廷で争ったケースを取材した。 5年ほど前、東京都内の病院に入院していた90代の母親には2人の実子がいた。 母親…",
-      "published": "2026-11-22T11:00:00+09:00",
+      "category": "国際",
+      "title": "米民主、「オバマ旋風」超えの258議席確保 下院で34年ぶり大勝",
+      "url": "https://www.asahi.com/articles/ASVCR00N7VCRBQBQ2NRM.html?iref=_international_international_list_n",
+      "description": "3日にあった米中間選挙をめぐり、民主党が連邦議会下院（定数435）で少なくとも258議席を獲得することが確実になった。AP通信が22日、伝えた。クリントン氏が大統領に初当選した1992年の下院選で民…",
+      "published": "2026-11-23T09:25:12+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "朝日",
-      "category": "経済",
-      "title": "円安見透かすFX投資家「もう円高はないだろう」視線は高金利の外貨",
-      "url": "https://www.asahi.com/articles/ASVCM41XYVCMULFA02SM.html?iref=_business_business_list_n",
-      "description": "7月30日夜、それまで1ドル=162円台だった対ドル円相場は、わずか50分で5円近く円高に振れ、157円台になった。円安を食い止めるため、政府・日本銀行が8兆円近くを投じた円買いの為替介入だった。 …",
-      "published": "2026-11-22T11:00:00+09:00",
+      "category": "国際",
+      "title": "女の悲しみ伝える中国の「女文字」 33年通い続ける研究者の思い",
+      "url": "https://www.asahi.com/articles/ASVCC0TNGVCCUTIL027M.html?iref=_international_international_list_n",
+      "description": "貧乏性の発想が、「運命の出会い」に導いてくれた。 「今年は学生時代最後の夏休み。記念に安徽省の黄山に登りたいと思います。先生は山登りが好きだとおっしゃっていたので、ぜひ一緒に登りませんか」 1993…",
+      "published": "2026-11-23T08:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "朝日",
-      "category": "経済",
-      "title": "男爵とメークイン、2強時代が終わる？ 産地で始まった品種切り替え",
-      "url": "https://www.asahi.com/articles/ASVCM43QDVCMIIPE003M.html?iref=_business_business_list_n",
-      "description": "「『男爵』というブランドを手放すのは怖い。今まで作り続けてきただけに寂しいし、上の世代ほど思い入れが強い。でも、先を考えると、ここで変えることこそが大切だと考えた」 2028年までに、男爵から新品種…",
-      "published": "2026-11-22T11:00:00+09:00",
+      "category": "国際",
+      "title": "「地震を起こす」襲撃3週間前、ハマスがイスラエルに発していた警告",
+      "url": "https://www.asahi.com/articles/ASVCL3QM5VCLUHBI00LM.html?iref=_international_international_list_n",
+      "description": "イスラム組織ハマスのパレスチナ自治区ガザの最高指導者だったヤヒヤ・シンワル氏が、2023年10月7日のイスラエル攻撃の約3週間前、「地震を起こす」とイスラエル側に警告していた。発言を直接聞いたパレス…",
+      "published": "2026-11-23T06:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
       "paper": "朝日",
-      "category": "経済",
-      "title": "警察官は元お笑い芸人 月収40円も…妻の地元で再挑戦、漫才で啓発",
-      "url": "https://www.asahi.com/articles/ASVCJ1T3RVCJPPZB003M.html?iref=_business_business_list_n",
-      "description": "銀行員や数学教師、自動車教習所の教官、ハンドボール選手……。岡山県警には多様な経歴から転身した警察官たちがいる。特にユニークな存在が、岡山中央署（岡山市中区）地域課の藤原心海（しんかい）巡査（30）…",
-      "published": "2026-11-22T10:00:00+09:00",
+      "category": "国際",
+      "title": "ハマスとイスラエル、1年余りの秘密交渉 行き詰まった末に「地震」",
+      "url": "https://www.asahi.com/articles/ASVCK3SJSVCKUHBI01YM.html?iref=_international_international_list_n",
+      "description": "イスラム組織ハマスが2023年10月7日にイスラエルを奇襲攻撃するまでの1年余りの間、両者の間では秘密交渉が進められていた。それがなぜ決裂し、中東全体を巻き込む戦火に至ったのか。交渉仲介者の証言から…",
+      "published": "2026-11-23T06:00:00+09:00",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "朝日",
+      "category": "国際",
+      "title": "ハマス襲撃前の警告はネタニヤフ氏に届いたか 防げなかった責任は？",
+      "url": "https://www.asahi.com/articles/ASVCK30ZTVCKUHBI012M.html?iref=_international_international_list_n",
+      "description": "パレスチナ自治区ガザのイスラム組織ハマスが大規模な攻撃を準備しているという事前の警告は、ネタニヤフ政権に対して少なくとも三つのルートから発せられたとみられている。ネタニヤフ首相は事前にどこまで知って…",
+      "published": "2026-11-23T06:00:00+09:00",
       "paid": "確認できず",
       "date_source": "記事公開日時"
     },
@@ -162,56 +212,6 @@
       "date_source": "記事公開日時"
     },
     {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "トランプ共和党大敗 だが脅威は続く ニューヨーク・タイムズコラム",
-      "url": "https://www.asahi.com/articles/ASVCL32KHVCLUHBI00QM.html?iref=_international_international_list_n",
-      "description": "■ジャメル・ブイ 2026年の中間選挙について語るべき、二つの基本的なストーリーがある。 第一は言うまでもなく、ドナルド・トランプ大統領と共和党の政治的な崩壊だ。権威主義的な抑圧、経済的失政、自ら引き…",
-      "published": "2026-11-22T09:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "習氏、14カ国と首脳会談、台湾問題で布石 日本など4カ国非開催",
-      "url": "https://www.asahi.com/articles/ASVCP3PQFVCPUHBI00LM.html?iref=_international_international_list_n",
-      "description": "中国の習近平（シーチンピン）国家主席は、アジア太平洋経済協力会議（APEC）首脳会議が開催された深圳で活発な首脳外交を展開した。20日までの4日間で14カ国の首脳と個別に会談。日本やフィリピンとは開…",
-      "published": "2026-11-22T09:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "迷ったら人を見て人に聞く 「あなたの選択」言われても 特派員メモ",
-      "url": "https://www.asahi.com/articles/ASVCF0GPPVCFUHBI008M.html?iref=_international_international_list_n",
-      "description": "■＠ロサンゼルス 出張先のロサンゼルスで夕刻の飛行機に乗り込み、滑走路までもうすぐというところで「メンテナンスの問題」により出発が遅れるとアナウンスがあった。米国で運航の乱れはかなり多い。いちいち気に…",
-      "published": "2026-11-22T08:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "「社会に根付くジェンダー格差、継続的に監視を」日韓女性記者が議論",
-      "url": "https://www.asahi.com/articles/ASVCP3R7FVCPUTFL020M.html?iref=_international_international_list_n",
-      "description": "日本と韓国の報道における多様性について話し合う「日韓女性記者フォーラム」が11月21日、東京都内であり、オンライン含め約150人が参加した。同フォーラムは「ジェンダー平等の劣等生である日韓の女性記者…",
-      "published": "2026-11-21T20:40:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "朝日",
-      "category": "国際",
-      "title": "混迷イスラエル政局で迫られる選択 アラブか超正統派か 鍵握るのは",
-      "url": "https://www.asahi.com/articles/ASVCJ2GB9VCJDIFI00LM.html?iref=_international_international_list_n",
-      "description": "10月27日のイスラエル総選挙で、リクードは27議席で第1党を維持したが、組閣を委ねられたのは第2党ヤシャルのアイゼンコット党首だった。反ネタニヤフ4党は48議席で、過半数に届かない。アラブ系政党に…",
-      "published": "2026-11-21T17:00:00+09:00",
-      "paid": "確認できず",
-      "date_source": "記事公開日時"
-    },
-    {
       "paper": "毎日",
       "category": "政治",
       "title": "当社委託先の外部サービスへの不正アクセスに伴う「毎日新聞デジタル」会員情報の一部漏えいについて - 毎日新聞",
@@ -219,6 +219,16 @@
       "description": "2026.11.19 毎日新聞社が「毎日新聞デジタル」のニュースアプリで利用している株式会社プレイドのサービス「KARTE」（カルテ）において不正アクセスが発生した事案に関連し、同社から毎日新聞デジタルの会員情報の一部が外部に漏えいしたとの連絡がありました。プレイド社によると、現時点で漏えいが確認",
       "published": "2026-11-19T16:45:00+0900",
       "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "毎日",
+      "category": "政治",
+      "title": "読む政治：高市内閣の評価にも直結？台湾有事答弁 1年で有権者に変化も - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261119/k00/00m/010/114000c",
+      "description": "高市早苗首相による台湾有事を巡る国会答弁で日中関係が悪化して1年。この答弁1年を踏まえ毎日新聞が10月24、25日に実施した全国世論調査で対中政策について尋ねたところ、中国に対し「厳しく対応すべきだ」との回答が多数を占めた。経済への影響などを懸念する声もあるが、高市首相の答弁の撤回に応じない姿勢は",
+      "published": "2026-11-23T07:00:00+0900",
+      "paid": "有料",
       "date_source": "記事公開日時"
     },
     {
@@ -254,11 +264,11 @@
     {
       "paper": "毎日",
       "category": "政治",
-      "title": "高市政権の行方：米中露の枠組み「固定化すれば悪夢…」 日本「蚊帳の外」に警戒 - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261119/k00/00m/030/327000c",
-      "description": "日本外交にとって米中露首脳会談は最大の警戒対象で、高市早苗首相は一連の外遊日程で強固な日米同盟の演出に腐心してきた。特に警戒するのは、対日圧力を強める中露に米国が取り込まれ、日本が「蚊帳の外」に置かれる構図だ。「米中露の枠組みが固定化すれば悪夢」（外務省幹部）で、日本は難しい外交局面を迎えている。",
-      "published": "2026-11-19T18:47:10+0900",
-      "paid": "有料",
+      "title": "首相日々：首相日々 22日 - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261123/ddm/002/010/071000c",
+      "description": "（22日） 公邸で過ごす。",
+      "published": "2026-11-23T02:00:56+0900",
+      "paid": "確認できず",
       "date_source": "記事公開日時"
     },
     {
@@ -268,16 +278,6 @@
       "url": "https://mainichi.jp/articles/20261122/kyd/00m/010/026000c",
       "description": "木原稔官房長官は22日、沖縄県の古謝玄太知事と那覇市内で会談し、米軍普天間飛行場（宜野湾市）を巡り、政府と県、市でつくる「普天間飛行場負担軽減推進会議」を年内に開催する方針を伝えた。木原氏が会談後、記者団に明らかにした。開かれれば2019年以来となる。具体的な開催日程については「今後、県や市などと",
       "published": "2026-11-22T19:12:30+0900",
-      "paid": "有料",
-      "date_source": "記事公開日時"
-    },
-    {
-      "paper": "毎日",
-      "category": "政治",
-      "title": "玉木氏「関文科相は問責決議案に値」 「虚偽答弁は重い」と批判 - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261122/kyd/00m/010/015000c",
-      "description": "国民民主党の玉木雄一郎代表は22日、関芳弘文部科学相の官僚が参加した政治資金パーティー問題を巡り「参院への問責決議案提出に値する」と熊本市内で記者団に述べた。これまで国会審議などで明らかにしていた2件に加え、新たに3件あったことを問題視し「虚偽答弁だ。閣僚が事実と異なる説明をしたのは重い」と批判し",
-      "published": "2026-11-22T16:17:10+0900",
       "paid": "有料",
       "date_source": "記事公開日時"
     },
@@ -404,6 +404,16 @@
     {
       "paper": "毎日",
       "category": "国際",
+      "title": "「判決だけでは誰も守れない」 ロヒンギャ、国際社会に行動要求 - 毎日新聞",
+      "url": "https://mainichi.jp/articles/20261122/k00/00m/030/194000c",
+      "description": "ミャンマーによるイスラム系少数民族ロヒンギャへのジェノサイド（集団虐殺）を認定した国際司法裁判所（ICJ）の判決を受け、世界各地のロヒンギャ団体などは22日までに、判決を「歴史的な一歩」と評価する一方、「判決だけでは誰も守れない」とする共同声明を発表した。ミャンマー側が判決に反発する中、国際社会に",
+      "published": "2026-11-23T05:30:00+0900",
+      "paid": "確認できず",
+      "date_source": "記事公開日時"
+    },
+    {
+      "paper": "毎日",
+      "category": "国際",
       "title": "COP31、交渉決裂 「脱化石」溝埋まらず合意文書の採択断念 - 毎日新聞",
       "url": "https://mainichi.jp/articles/20261122/k00/00m/030/191000c",
       "description": "トルコで開かれた国連気候変動枠組み条約第31回締約国会議（COP31）は22日、成果文書案に合意できず、ムラト・クルム議長が採択の断念を表明した。最大の争点となった「化石燃料からの脱却」という文言が盛り込まれず、欧州連合（EU）や島しょ国などが強く反発した。会期を2日延ばして協議が続けられたが、交",
@@ -412,14 +422,14 @@
       "date_source": "記事公開日時"
     },
     {
-      "paper": "毎日",
-      "category": "国際",
-      "title": "核兵器被害の救済、新たな枠組みを提言 ICAN報告書 - 毎日新聞",
-      "url": "https://mainichi.jp/articles/20261122/kyd/00m/030/033000c",
-      "description": "核兵器禁止条約の再検討会議の開幕を30日に控え、非政府組織（NGO）の核兵器廃絶国際キャンペーン（ICAN）が条約に関する報告書をまとめ、核兵器による被害で援助を必要とする国と、支援可能な国を結びつけるデータベースの整備を提言していることが22日分かった。新たな枠組みにより、被害者救済や汚染地域の",
-      "published": "2026-11-22T21:59:30+0900",
-      "paid": "有料",
-      "date_source": "記事公開日時"
+      "paper": "読売",
+      "category": "政治",
+      "title": "関文科相パーティー問題、野党は「問責」提出の構え…国民幹事長「週明けの早い段階で本人や首相が決断を」（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/209a002b57df1cb102c9a7ea7ea3cac2b17ca787",
+      "description": "関文部科学相が企業関係者を集めた複数の政治資金パーティーに利害関係にある省庁職員を同席させていた問題で、野党は関氏の辞任要求を強めている。与党内でも辞任論が広がっており、野党は自主的に関氏が身を引か",
+      "published": "2026-11-23T09:01:21+09:00",
+      "paid": "確認できず",
+      "date_source": "Yahoo配信日時"
     },
     {
       "paper": "読売",
@@ -448,6 +458,16 @@
       "url": "https://news.yahoo.co.jp/articles/b58c567f563214130c62b7bad621248ed77962cc",
       "description": "関芳弘文部科学相が企業関係者を集めた複数の政治資金パーティーに利害関係にある省庁職員を同席させていた問題で、与党内で２１日、関氏の辞任論が広がった。少数与党の参院では、野党が関氏への問責決議案を提出",
       "published": "2026-11-22T05:00:41+09:00",
+      "paid": "確認できず",
+      "date_source": "Yahoo配信日時"
+    },
+    {
+      "paper": "読売",
+      "category": "経済",
+      "title": "「障害者雇用ビジネス」、主要企業も利用…厚生労働省が規制導入を検討中（読売新聞オンライン）",
+      "url": "https://news.yahoo.co.jp/articles/1fdd59e920b53d77fb01a9c807a0db69dd984356",
+      "description": "読売新聞が国内主要企業１１２社に障害者雇用の状況を聞いたところ、回答した９１社のうち１３％が、農園など障害者の働く場を企業に提供する「障害者雇用ビジネス」を利用していることがわかった。利用理由は「障",
+      "published": "2026-11-23T05:00:51+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
     },
@@ -483,16 +503,6 @@
     },
     {
       "paper": "読売",
-      "category": "経済",
-      "title": "株高支えてきたＡＩ相場「変調」、市場意識…ハイテク銘柄の売り相次ぎＮＹ株７か月ぶり安値（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/eb3b46c9432b5bc95f5de4b5fc2edb5b60c2d5a4",
-      "description": "【ニューヨーク＝木瀬武】２０日のニューヨーク株式市場では、巨額の投資を行うＡＩ（人工知能）関連企業の先行きに対する懸念が広がり、ハイテク銘柄への売り注文が相次いだ。ダウ平均株価（３０種）やナスダック",
-      "published": "2026-11-21T23:07:15+09:00",
-      "paid": "確認できず",
-      "date_source": "Yahoo配信日時"
-    },
-    {
-      "paper": "読売",
       "category": "国際",
       "title": "上皇さまにお辞儀するオバマ氏の写真投稿し「へつらい屋」とやゆ…トランプ大統領の政治広報チーム（読売新聞オンライン）",
       "url": "https://news.yahoo.co.jp/articles/d834a4bbfd707b526653c5428c02980bd5bfb42d",
@@ -500,71 +510,31 @@
       "published": "2026-11-22T20:42:54+09:00",
       "paid": "確認できず",
       "date_source": "Yahoo配信日時"
-    },
-    {
-      "paper": "読売",
-      "category": "国際",
-      "title": "世界の核９割保有する米中露で「責任」議論、トランプ氏「日本などは少し取り残された」（読売新聞オンライン）",
-      "url": "https://news.yahoo.co.jp/articles/89b9bad67271e8388e7e493bb4c88ff0dc11ce68",
-      "description": "【ワシントン＝栗山紘尚、関根晃次郎】米国のトランプ大統領は２０日の記者会見で、米中露首脳会談について「核保有国の責任について議論した」と成果を強調した上で、日本などの国々が「少し取り残されたと感じた",
-      "published": "2026-11-21T21:36:57+09:00",
-      "paid": "確認できず",
-      "date_source": "Yahoo配信日時"
     }
   ],
   "errors": [
     {
-      "paper": "朝日",
-      "category": "国際",
-      "url": "https://www.asahi.com/articles/ASVCP7VRJVCPSFVU11PM.html?iref=_international_international_list_n",
-      "reason": "HTTP Error 404: Not Found"
-    },
-    {
       "paper": "読売",
-      "category": "国際",
-      "url": "https://news.yahoo.co.jp/articles/68296eeeb9d780642e59b2624616df8542fd4f1e",
+      "category": "政治",
+      "url": "https://news.yahoo.co.jp/articles/592b9b24759b4e0ca97b2005185ba5c9190adfd4",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
-      "category": "経済",
-      "url": "https://news.yahoo.co.jp/articles/c5b68a7ffdc2a48d771ca0822ffdf19f574dc7ce",
+      "category": "政治",
+      "url": "https://news.yahoo.co.jp/articles/592b9b24759b4e0ca97b2005185ba5c9190adfd4",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
-      "category": "国際",
-      "url": "https://news.yahoo.co.jp/articles/68296eeeb9d780642e59b2624616df8542fd4f1e",
+      "category": "政治",
+      "url": "https://news.yahoo.co.jp/articles/592b9b24759b4e0ca97b2005185ba5c9190adfd4",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     },
     {
       "paper": "読売",
-      "category": "経済",
-      "url": "https://news.yahoo.co.jp/articles/c5b68a7ffdc2a48d771ca0822ffdf19f574dc7ce",
-      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
-    },
-    {
-      "paper": "読売",
-      "category": "国際",
-      "url": "https://news.yahoo.co.jp/articles/68296eeeb9d780642e59b2624616df8542fd4f1e",
-      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
-    },
-    {
-      "paper": "読売",
-      "category": "経済",
-      "url": "https://news.yahoo.co.jp/articles/c5b68a7ffdc2a48d771ca0822ffdf19f574dc7ce",
-      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
-    },
-    {
-      "paper": "読売",
-      "category": "国際",
-      "url": "https://news.yahoo.co.jp/articles/68296eeeb9d780642e59b2624616df8542fd4f1e",
-      "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
-    },
-    {
-      "paper": "読売",
-      "category": "経済",
-      "url": "https://news.yahoo.co.jp/articles/c5b68a7ffdc2a48d771ca0822ffdf19f574dc7ce",
+      "category": "政治",
+      "url": "https://news.yahoo.co.jp/articles/592b9b24759b4e0ca97b2005185ba5c9190adfd4",
       "reason": "Yahoo記事で著者「読売新聞オンライン」を確認できず"
     }
   ],
@@ -575,32 +545,32 @@
     "毎日|政治": 7,
     "毎日|経済": 7,
     "毎日|国際": 7,
-    "読売|政治": 3,
+    "読売|政治": 4,
     "読売|経済": 4,
-    "読売|国際": 2
+    "読売|国際": 1
   },
   "diagnostics": {
     "yomiuri": {
       "pages": 4,
       "listed": 140,
       "classified": {
-        "政治": 3,
-        "経済": 8,
-        "国際": 6
+        "政治": 8,
+        "経済": 4,
+        "国際": 1
       },
-      "unclassified": 123,
+      "unclassified": 127,
       "unclassified_examples": [
-        "ＣＯ、合意文書の採択断念し閉幕…「化石燃料からの脱却加速」巡り交渉決裂 11/22(日) 22:51",
-        "タワーレコード、１１００万件の個人情報が流出…商品の一部は発送ができていない模様 11/22(日) 21:25",
-        "物珍しさで６万人が集まった伝説の公演から４６年、ゴダイゴが「銀河鉄道９９９」などカトマンズで熱唱 11/22(日) 21:05",
-        "大の里が連覇、若元春を優勝決定戦で退ける…九州場所 11/22(日) 17:46",
-        "新種の細菌を発見、交友のある微生物学者の名前を使って命名…「近頃では珍しいことではないか」 11/22(日) 17:45",
-        "北陸新幹線の延伸・工事で出るのは大量の「建設残土」…搬出するなら交通渋滞や風評被害の可能性も、国交省説明会で懸念の声相次ぐ 11/22(日) 17:21"
+        "岩井明愛が米女子ゴルフの今季最終戦で２位…山下美夢有は今季年間平均ストローク１位に 11/23(月) 7:03",
+        "強さの水準が「藤井聡太」以前と以後で変わる…「ＡＩを活用しつつ自分で考え」進化、ミスなし「藤井曲線」は代名詞 11/23(月) 5:01",
+        "障害者の雇用環境向上、試行錯誤しながら…ＮＴＴはグループ会社間の交流会 11/23(月) 5:00",
+        "日本人の個人情報「需要ある」「ハッキング容易」…セキュリティー軽視、経営層に危機感届かず 11/23(月) 5:00",
+        "化石燃料巡り交渉決裂のＣＯＰ３１が閉幕、各国の溝埋まらず…合意文書の採択なしは２００９年以来 11/23(月) 2:00",
+        "ＣＯＰ、合意文書の採択断念し閉幕へ…「化石燃料からの脱却加速」巡り交渉決裂 11/22(日) 22:51"
       ],
       "article_failures": {
-        "政治": 0,
-        "経済": 4,
-        "国際": 4
+        "政治": 4,
+        "経済": 0,
+        "国際": 0
       }
     }
   },
